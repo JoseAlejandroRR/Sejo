@@ -9,7 +9,7 @@ import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Iterator;
 
-public class RequestHandler implements HttpHandler {
+public class RouterHandler implements HttpHandler {
 
     private String method;
 
@@ -19,7 +19,11 @@ public class RequestHandler implements HttpHandler {
 
     public ArrayList<String> routes;
 
-    public RequestHandler()
+    public static final String METHOD_POST = "POST";
+
+    public static final String METHOD_GET = "GET";
+
+    public RouterHandler()
     {
         routesMap = new ArrayList<Route>();
         routes = new ArrayList<String>();
@@ -73,6 +77,22 @@ public class RequestHandler implements HttpHandler {
             return true;
         }
         return false;
+    }
+
+    public  void get(String url, IRequestHandler handler)
+    {
+        if (!this.existRoute(url)) {
+            routesMap.add(new Route(METHOD_GET, url, handler));
+            routes.add(url);
+        }
+    }
+
+    public  void post(String url, IRequestHandler handler)
+    {
+        if (!existRoute(url)) {
+            routesMap.add(new Route(METHOD_POST, url, handler));
+            routes.add(url);
+        }
     }
 
 }

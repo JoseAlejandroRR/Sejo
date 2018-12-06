@@ -1,6 +1,7 @@
 package app;
 
-import app.handlers.HomeHandler;
+import app.http.handlers.HomeHandler;
+import com.skillcorp.sejoframework.web.RouterHandler;
 import com.skillcorp.sejoframework.web.Server;
 
 public class Bootstrap {
@@ -10,14 +11,15 @@ public class Bootstrap {
     public static void run()
     {
         Server server = Server.getInstance(PORT);
+        RouterHandler router = server.routerHandler;
 
         System.out.println("Server start at");
 
-        Server.get("/API", new HomeHandler("API"));
+        router.get("/API", new HomeHandler("API"));
 
-        Server.get("/web", new HomeHandler("ROOT"));
+        router.get("/web", new HomeHandler("ROOT"));
 
-        Server.get("/404", new HomeHandler("ERROR 404"));
+        router.get("/404", new HomeHandler("ERROR 404"));
 
         Server.start();
     }
