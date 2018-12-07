@@ -1,12 +1,14 @@
 package com.skillcorp.sejoframework.web;
 
+import app.http.handlers.HomeHandler;
+import com.skillcorp.sejoframework.contracts.http.IServer;
 import com.sun.net.httpserver.HttpServer;
 
 import java.io.IOException;
 import java.net.InetSocketAddress;
 import java.util.ArrayList;
 
-public class Server  {
+public class Server implements IServer {
 
     public static int PORT;
 
@@ -18,7 +20,7 @@ public class Server  {
 
     public static ArrayList<String> routes;
 
-    public static RouterHandler routerHandler;
+    public RouterHandler routerHandler;
 
 
     private Server(int port)
@@ -46,13 +48,21 @@ public class Server  {
 
 
 
-    public static void start()
+    public void start()
     {
-        //routerHandler.setRoutes(routesMap);
-
         httpServer.createContext("/", routerHandler);
         httpServer.setExecutor(null);
         httpServer.start();
+    }
+
+    public RouterHandler getRouterHandler()
+    {
+        return routerHandler;
+    }
+
+    public void setRouterHandler(RouterHandler router)
+    {
+        this.routerHandler = router;
     }
 
     public static boolean existRoute(String url)

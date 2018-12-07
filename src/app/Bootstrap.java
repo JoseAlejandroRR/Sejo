@@ -1,26 +1,31 @@
 package app;
 
+import app.bootstrap.Middlewares;
+import app.bootstrap.Providers;
+import app.http.Routes;
 import app.http.handlers.HomeHandler;
+import app.http.handlers.PageNotFound;
+import com.skillcorp.sejoframework.Application;
 import com.skillcorp.sejoframework.web.RouterHandler;
 import com.skillcorp.sejoframework.web.Server;
 
 public class Bootstrap {
 
-    public static int PORT = 9000;
 
     public static void run()
     {
-        Server server = Server.getInstance(PORT);
-        RouterHandler router = server.routerHandler;
+        Application app = Application.getInstance();
 
-        System.out.println("Server start at");
+        Routes routes = new Routes(app.server.getRouterHandler());
 
-        router.get("/API", new HomeHandler("API"));
+        routes.getRouter().setHandler404(new PageNotFound());
 
-        router.get("/web", new HomeHandler("ROOT"));
+        app.server.setRouterHandler(routes.getRouter());
 
-        router.get("/404", new HomeHandler("ERROR 404"));
+        app.registerProviders(Providers.getList());
 
-        Server.start();
+        app.registerMiddlewares(Middlewares.getList());
+
+        app.run();
     }
 }

@@ -3,11 +3,17 @@
   <component name="ChangeListManager">
     <list default="true" id="f9321a86-c831-4830-9842-57bc261102e2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SejoFramework/app/Bootstrap.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SejoFramework/app/Bootstrap.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SejoFramework/com/skillcorp/sejoframework/web/RequestHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SejoFramework/com/skillcorp/sejoframework/web/Server.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SejoFramework/com/skillcorp/sejoframework/web/Server.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SejoFramework/app/Bootstrap.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SejoFramework/app/handlers/HomeHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SejoFramework/com/skillcorp/sejoframework/web/IRequestHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SejoFramework/com/skillcorp/sejoframework/web/Route.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SejoFramework/com/skillcorp/sejoframework/web/Server.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/Bootstrap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Bootstrap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/skillcorp/sejoframework/web/RequestHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/skillcorp/sejoframework/web/RouterHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/http/Routes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/http/Routes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/http/handlers/HomeHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/http/handlers/HomeHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/skillcorp/sejoframework/web/IRequestHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/skillcorp/sejoframework/contracts/http/IRequestHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/skillcorp/sejoframework/web/Route.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/skillcorp/sejoframework/web/Route.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/skillcorp/sejoframework/web/RouterHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/skillcorp/sejoframework/web/RouterHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/skillcorp/sejoframework/web/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/skillcorp/sejoframework/web/Server.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -17,16 +23,25 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/SejoFramework$Main.ic" NAME="Main Coverage Results" MODIFIED="1544144413253" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="209" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Main.java">
+        <entry file="file://$PROJECT_DIR$/src/com/skillcorp/sejoframework/web/RouterHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+            <state relative-caret-position="551">
+              <caret line="40" column="5" lean-forward="true" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
               <folding>
-                <element signature="e#91#92#0" expanded="true" />
-                <element signature="e#122#123#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#1107#1108#0" expanded="true" />
+                <element signature="e#1140#1141#0" expanded="true" />
+                <element signature="e#3517#3518#0" expanded="true" />
+                <element signature="e#4016#4017#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -35,38 +50,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/Bootstrap.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/app/http/middlewares/Routes.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="16" selection-start-column="16" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/config/App.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="46" lean-forward="true" selection-start-line="4" selection-start-column="46" selection-end-line="4" selection-end-column="46" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/handlers/HomeHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="18" selection-start-line="18" selection-end-line="18" />
+            <state relative-caret-position="340">
+              <caret line="20" column="61" selection-start-line="20" selection-start-column="61" selection-end-line="20" selection-end-column="61" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -75,19 +60,34 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/skillcorp/sejoframework/web/IRequestHandler.java">
+        <entry file="file://$PROJECT_DIR$/src/app/http/handlers/HomeHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
+            <state relative-caret-position="238">
+              <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/skillcorp/sejoframework/web/RouterHandler.java">
+        <entry file="file://$PROJECT_DIR$/src/com/skillcorp/sejoframework/contracts/middlewares/IMiddleware.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
-              <caret line="78" column="21" lean-forward="true" selection-start-line="78" selection-start-column="21" selection-end-line="78" selection-end-column="21" />
+            <state relative-caret-position="119">
+              <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/http/middlewares/TokenAuthenticartion.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -98,8 +98,52 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/skillcorp/sejoframework/web/Route.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" selection-start-line="6" selection-end-line="6" />
+            <state relative-caret-position="213">
+              <caret line="34" column="9" lean-forward="true" selection-start-line="31" selection-start-column="8" selection-end-line="34" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/app/http/Routes.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="25" column="35" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#777#778#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/http/handlers/PageNotFound.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="44" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#331#332#0" expanded="true" />
+                <element signature="e#368#369#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/skillcorp/sejoframework/web/Response.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="21" column="21" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
+              <folding>
+                <element signature="e#255#256#0" expanded="true" />
+                <element signature="e#302#303#0" expanded="true" />
+                <element signature="e#355#356#0" expanded="true" />
+                <element signature="e#402#403#0" expanded="true" />
+                <element signature="e#672#673#0" expanded="true" />
+                <element signature="e#702#703#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -107,8 +151,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/skillcorp/sejoframework/web/Server.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" selection-start-line="21" selection-end-line="21" />
+            <state relative-caret-position="763">
+              <caret line="51" column="5" selection-start-line="51" selection-start-column="5" selection-end-line="51" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -126,6 +170,14 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>routerHandler</find>
+      <find>providers</find>
+      <find>providers</find>
+      <find>setRoutes</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -136,13 +188,33 @@
         <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/com/skillcorp/sejoframework/web/IRequestHandler.java" />
         <option value="$PROJECT_DIR$/src/app/handlers/HomeHandler.java" />
-        <option value="$PROJECT_DIR$/src/com/skillcorp/sejoframework/web/Route.java" />
         <option value="$PROJECT_DIR$/src/com/skillcorp/sejoframework/web/RequestHandler.java" />
-        <option value="$PROJECT_DIR$/src/com/skillcorp/sejoframework/web/Server.java" />
-        <option value="$PROJECT_DIR$/src/com/skillcorp/sejoframework/web/RouterHandler.java" />
         <option value="$PROJECT_DIR$/src/config/App.java" />
-        <option value="$PROJECT_DIR$/src/app/Bootstrap.java" />
         <option value="$PROJECT_DIR$/src/app/http/middlewares/Routes.java" />
+        <option value="$PROJECT_DIR$/src/com/skillcorp/sejoframework/contracts/IServer.java" />
+        <option value="$PROJECT_DIR$/src/com/skillcorp/sejoframework/contracts/app/IApplication.java" />
+        <option value="$PROJECT_DIR$/src/com/skillcorp/sejoframework/contracts/http/IServer.java" />
+        <option value="$PROJECT_DIR$/src/app/providers/DB.java" />
+        <option value="$PROJECT_DIR$/src/com/skillcorp/sejoframework/database/DB.java" />
+        <option value="$PROJECT_DIR$/src/app/bootstrap/Providers.java" />
+        <option value="$PROJECT_DIR$/src/com/skillcorp/sejoframework/contracts/providers/IProvider.java" />
+        <option value="$PROJECT_DIR$/src/app/providers/DBProvider.java" />
+        <option value="$PROJECT_DIR$/src/app/providers/Provider.java" />
+        <option value="$PROJECT_DIR$/src/com/skillcorp/sejoframework/contracts/providers/Provider.java" />
+        <option value="$PROJECT_DIR$/src/com/skillcorp/sejoframework/web/Request.java" />
+        <option value="$PROJECT_DIR$/src/com/skillcorp/sejoframework/contracts/http/IRequestHandler.java" />
+        <option value="$PROJECT_DIR$/src/app/http/handlers/HomeHandler.java" />
+        <option value="$PROJECT_DIR$/src/com/skillcorp/sejoframework/web/Server.java" />
+        <option value="$PROJECT_DIR$/src/app/bootstrap/Middlewares.java" />
+        <option value="$PROJECT_DIR$/src/com/skillcorp/sejoframework/Application.java" />
+        <option value="$PROJECT_DIR$/src/com/skillcorp/sejoframework/contracts/middlewares/IMiddleware.java" />
+        <option value="$PROJECT_DIR$/src/com/skillcorp/sejoframework/web/Route.java" />
+        <option value="$PROJECT_DIR$/src/app/http/handlers/PageNotFound.java" />
+        <option value="$PROJECT_DIR$/src/app/Bootstrap.java" />
+        <option value="$PROJECT_DIR$/src/com/skillcorp/sejoframework/web/RouterHandler.java" />
+        <option value="$PROJECT_DIR$/src/com/skillcorp/sejoframework/web/Response.java" />
+        <option value="$PROJECT_DIR$/src/app/http/middlewares/TokenAuthenticartion.java" />
+        <option value="$PROJECT_DIR$/src/app/http/Routes.java" />
       </list>
     </option>
   </component>
@@ -166,54 +238,82 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="Sejo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Sejo" type="462c0819:PsiDirectoryNode" />
+              <item name="SejoFramework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SejoFramework" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Sejo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Sejo" type="462c0819:PsiDirectoryNode" />
+              <item name="SejoFramework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SejoFramework" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Sejo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Sejo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Sejo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Sejo" type="462c0819:PsiDirectoryNode" />
+              <item name="SejoFramework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SejoFramework" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SejoFramework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SejoFramework" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="bootstrap" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SejoFramework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SejoFramework" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="http" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SejoFramework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SejoFramework" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="http" type="462c0819:PsiDirectoryNode" />
               <item name="handlers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Sejo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Sejo" type="462c0819:PsiDirectoryNode" />
+              <item name="SejoFramework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SejoFramework" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="http" type="462c0819:PsiDirectoryNode" />
               <item name="middlewares" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Sejo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Sejo" type="462c0819:PsiDirectoryNode" />
+              <item name="SejoFramework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SejoFramework" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="sejoframework" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SejoFramework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SejoFramework" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="sejoframework" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544111713452" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544151816833" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.skillcorp.sejoframework" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -267,10 +367,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2521322" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24966443" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -279,24 +379,54 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32827735" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4986577" visible="true" weight="0.3286119" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.3286119" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49932885" weight="0.3286119" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.3286119" />
-      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5013423" side_tool="true" weight="0.3286119" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.3286119" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.3286119" />
+      <window_info anchor="right" id="Coverage" sideWeight="0.5021097" side_tool="true" weight="0.3295302" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.24966443" />
+      <window_info anchor="right" id="Ant Build" order="1" sideWeight="0.4978903" weight="0.24966443" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Maven" order="4" weight="0.3295302" />
+      <window_info anchor="right" id="Maven" order="4" sideWeight="0.4978903" weight="0.3295302" />
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24966443" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4986577" visible="true" weight="0.3286119" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49932885" weight="0.3286119" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3286119" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5013423" side_tool="true" weight="0.3286119" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.3286119" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3286119" />
+      <window_info anchor="right" id="Coverage" order="0" sideWeight="0.5021097" side_tool="true" weight="0.3295302" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="2" sideWeight="0.4978903" weight="0.24966443" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Maven" order="5" sideWeight="0.4978903" weight="0.3295302" />
+      <window_info anchor="right" id="Theme Preview" order="6" />
+      <window_info anchor="right" id="Capture Analysis" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+    </layout-to-restore>
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -307,57 +437,14 @@
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/jre/lib/rt.jar!/sun/net/httpserver/HttpServerImpl.class" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/jre/lib/rt.jar!/com/sun/net/httpserver/HttpServer.class" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/jre/lib/rt.jar!/sun/net/httpserver/ContextList.class" />
-    <entry file="file://$PROJECT_DIR$/src/app/handlers/HomeHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/skillcorp/sejoframework/web/IRequestHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/handlers/HomeHandler.java" />
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="102">
+          <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
           <folding>
             <element signature="e#91#92#0" expanded="true" />
             <element signature="e#122#123#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/skillcorp/sejoframework/web/Route.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/skillcorp/sejoframework/web/Server.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/skillcorp/sejoframework/web/RouterHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="78" column="21" lean-forward="true" selection-start-line="78" selection-start-column="21" selection-end-line="78" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -369,20 +456,209 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/Bootstrap.java">
+    <entry file="file://$PROJECT_DIR$/src/app/http/middlewares/Routes.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/skillcorp/sejoframework/contracts/app/IApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/skillcorp/sejoframework/contracts/http/IServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/skillcorp/sejoframework/contracts/providers/IProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/skillcorp/sejoframework/database/DB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="41" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
+          <folding>
+            <element signature="e#171#172#0" expanded="true" />
+            <element signature="e#202#203#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/providers/DBProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/bootstrap/Providers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="27" column="5" lean-forward="true" selection-start-line="9" selection-start-column="4" selection-end-line="27" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/http/middlewares/Routes.java">
+    <entry file="file://$PROJECT_DIR$/src/com/skillcorp/sejoframework/contracts/http/IRequestHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="16" selection-start-column="16" selection-end-column="16" />
+        <state relative-caret-position="136">
+          <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/skillcorp/sejoframework/web/Request.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="22" column="35" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/skillcorp/sejoframework/contracts/providers/Provider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/skillcorp/sejoframework/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="31" column="55" selection-start-line="31" selection-start-column="55" selection-end-line="31" selection-end-column="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/bootstrap/Middlewares.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/skillcorp/sejoframework/contracts/middlewares/IMiddleware.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/skillcorp/sejoframework/web/Route.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="34" column="9" lean-forward="true" selection-start-line="31" selection-start-column="8" selection-end-line="34" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/http/handlers/HomeHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/skillcorp/sejoframework/web/Server.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="763">
+          <caret line="51" column="5" selection-start-line="51" selection-start-column="5" selection-end-line="51" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/http/handlers/PageNotFound.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="44" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#331#332#0" expanded="true" />
+            <element signature="e#368#369#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/Bootstrap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="61" selection-start-line="20" selection-start-column="61" selection-end-line="20" selection-end-column="61" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/skillcorp/sejoframework/web/RouterHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="551">
+          <caret line="40" column="5" lean-forward="true" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1107#1108#0" expanded="true" />
+            <element signature="e#1140#1141#0" expanded="true" />
+            <element signature="e#3517#3518#0" expanded="true" />
+            <element signature="e#4016#4017#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/skillcorp/sejoframework/web/Response.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="21" column="21" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
+          <folding>
+            <element signature="e#255#256#0" expanded="true" />
+            <element signature="e#302#303#0" expanded="true" />
+            <element signature="e#355#356#0" expanded="true" />
+            <element signature="e#402#403#0" expanded="true" />
+            <element signature="e#672#673#0" expanded="true" />
+            <element signature="e#702#703#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/http/middlewares/TokenAuthenticartion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/http/Routes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="25" column="35" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#777#778#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
