@@ -8,6 +8,8 @@ public class Response {
 
     public int httpCode = 200;
 
+    public boolean handled = false;
+
     public Response()
     {
     }
@@ -30,6 +32,9 @@ public class Response {
         {
             this.response = response;
         }
+
+        handled = true;
+
         return this;
     }
 

@@ -2,18 +2,18 @@ package app.http.middlewares;
 
 import com.skillcorp.sejoframework.contracts.middlewares.IMiddleware;
 import com.skillcorp.sejoframework.web.Request;
+import com.skillcorp.sejoframework.web.RequestHandler;
 import com.skillcorp.sejoframework.web.Response;
 
-public class TokenAuthenticartion implements IMiddleware {
+public class TokenAuthenticartion extends RequestHandler implements IMiddleware {
 
 
     @Override
-    public Response handle(Request request, Response response) {
-        System.out.println("CHECHEANDO URL " + request.url);
+    public void handle(Request request, Response response) {
+        System.out.println("CHEQUEANDO URL " + request.url);
         if (request.url.equals("/api"))
         {
-            return response.send(404);
+            response.send("Not enabled");
         }
-        return null;
     }
 }

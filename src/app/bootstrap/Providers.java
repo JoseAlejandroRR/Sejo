@@ -7,7 +7,7 @@ import java.util.HashMap;
 
 public class Providers {
 
-    private static HashMap<String, String> providers;
+    private static HashMap<String, Object> providers;
 
     private Providers()
     {
@@ -16,9 +16,9 @@ public class Providers {
 
     private static void register()
     {
-        providers = new HashMap<String, String>();
+        providers = new HashMap<String, Object>();
 
-        providers.put("DB", DB.class.getName());
+        providers.put("DB", DB.class);
     }
 
     public static HashMap getList()

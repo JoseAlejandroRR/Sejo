@@ -5,5 +5,5 @@ import com.skillcorp.sejoframework.web.Response;
 
 public interface IMiddleware {
 
-    public Response handle(Request request, Response response);
+    public void handle(Request request, Response response);
 }

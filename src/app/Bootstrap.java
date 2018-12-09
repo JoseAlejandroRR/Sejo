@@ -6,6 +6,8 @@ import app.http.Routes;
 import app.http.handlers.HomeHandler;
 import app.http.handlers.PageNotFound;
 import com.skillcorp.sejoframework.Application;
+import com.skillcorp.sejoframework.helpers.Logger;
+import com.skillcorp.sejoframework.providers.ServiceProvider;
 import com.skillcorp.sejoframework.web.RouterHandler;
 import com.skillcorp.sejoframework.web.Server;
 
@@ -14,18 +16,28 @@ public class Bootstrap {
 
     public static void run()
     {
-        Application app = Application.getInstance();
+        Logger logger = new Logger(Logger.DEBUG);
 
-        Routes routes = new Routes(app.server.getRouterHandler());
+        Server server = new Server(logger, new PageNotFound());
 
-        routes.getRouter().setHandler404(new PageNotFound());
+        ServiceProvider container = new ServiceProvider();
 
-        app.server.setRouterHandler(routes.getRouter());
+        server.routerHandler.setContainer(container);
 
-        app.registerProviders(Providers.getList());
+        container.setLogger(logger);
 
-        app.registerMiddlewares(Middlewares.getList());
+        Application app = new Application(server, container, logger);
 
-        app.run();
+        Routes routes = new Routes(server.getRouterHandler());
+
+        //routes.getRouter().setHandler404(new PageNotFound());
+
+        //server.setRouterHandler(routes.getRouter());
+
+        server.registerMiddlewares(Middlewares.getList());
+
+        container.registerProviders(Providers.getList());
+
+        server.start(9000);
     }
 }

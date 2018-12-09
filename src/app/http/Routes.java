@@ -1,10 +1,7 @@
 package app.http;
 
 import app.http.handlers.HomeHandler;
-import com.skillcorp.sejoframework.contracts.providers.Provider;
 import com.skillcorp.sejoframework.web.RouterHandler;
-
-import java.util.HashMap;
 
 public class Routes {
 
@@ -19,13 +16,15 @@ public class Routes {
 
     private void registerRoutes()
     {
-        router.get("/api", new String[]{"auth"}, new HomeHandler("API endpoint"));
+        router.get("/api", HomeHandler.class).middleware("auth");
+        router.get("/api/user/[user_id]/adress/[direction]", HomeHandler.class, "getUser").middleware("auth");
 
-        router.get("/web","auth" ,  new HomeHandler("ROOT URL"));
+       // router.get("/web","auth" ,  new HomeHandler("ROOT URL"));
 
-        router.get("/client","guest" ,  new HomeHandler("ROOT URL"));
+       // router.get("/client","guest" ,  new HomeHandler("ROOT URL"));
 
-        router.get("/test", new HomeHandler("Page for Testing"));
+        router.get("/test", HomeHandler.class, "action")
+                .middleware("auth");
     }
 
     public RouterHandler getRouter()

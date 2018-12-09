@@ -1,4 +1,4 @@
-package com.skillcorp.sejoframework.contracts.providers;
+package com.skillcorp.sejoframework.providers;
 
 import com.skillcorp.sejoframework.contracts.providers.IProvider;
 

@@ -7,7 +7,7 @@ import java.util.HashMap;
 
 public class Middlewares {
 
-    private static HashMap<String, String> middlewares;
+    private static HashMap<String, Object> middlewares;
 
     private Middlewares()
     {
@@ -16,9 +16,9 @@ public class Middlewares {
 
     private static void register()
     {
-        middlewares = new HashMap<String, String>();
+        middlewares = new HashMap<String, Object>();
 
-        middlewares.put("auth", TokenAuthenticartion.class.getName());
+        middlewares.put("auth", TokenAuthenticartion.class);
     }
 
     public static HashMap getList()

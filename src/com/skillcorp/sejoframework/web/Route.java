@@ -3,6 +3,8 @@ package com.skillcorp.sejoframework.web;
 
 import com.skillcorp.sejoframework.contracts.http.IRequestHandler;
 
+import java.util.HashMap;
+
 public class Route {
 
     public String url;
@@ -13,34 +15,21 @@ public class Route {
 
     public String[] middlewares;
 
-    //public String middleware;
+    public String methodHandlerName;
 
     public Route(String method, String url, IRequestHandler handler)
     {
         this.method = method;
         this.url = url;
-        //this.middleware = null;
         this.handler = handler;
     }
 
-    public Route(String method, String url, String middleware, IRequestHandler handler)
+
+    public Route(String method, String url, IRequestHandler handler, String methodName)
     {
         this.method = method;
         this.url = url;
         this.handler = handler;
-
-        if(middleware != null) {
-            this.middlewares = new String[1];
-            this.middlewares[0] = middleware;
-        }
-
-    }
-
-    public Route(String method, String url, String[] middlewares, IRequestHandler handler)
-    {
-        this.method = method;
-        this.url = url;
-        this.middlewares = middlewares;
-        this.handler = handler;
+        this.methodHandlerName = methodName;
     }
 }

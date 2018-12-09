@@ -1,18 +1,29 @@
 package com.skillcorp.sejoframework.web;
 
 import app.http.handlers.HomeHandler;
+import com.skillcorp.sejoframework.contracts.http.IRequestHandler;
 import com.skillcorp.sejoframework.contracts.http.IServer;
+import com.skillcorp.sejoframework.contracts.http.IWebServer;
+import com.skillcorp.sejoframework.contracts.middlewares.IMiddleware;
+import com.skillcorp.sejoframework.contracts.providers.ILogger;
+import com.skillcorp.sejoframework.helpers.Builder;
+import com.skillcorp.sejoframework.providers.Provider;
 import com.sun.net.httpserver.HttpServer;
 
 import java.io.IOException;
 import java.net.InetSocketAddress;
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 
-public class Server implements IServer {
+public class Server implements IServer, IWebServer
+{
 
     public static int PORT;
 
     private static HttpServer httpServer = null;
+
+    protected ILogger logger;
 
     private static Server instance = null;
 
@@ -20,39 +31,71 @@ public class Server implements IServer {
 
     public static ArrayList<String> routes;
 
+    private static HashMap<String, IMiddleware> middlewares;
+
+    private static IRequestHandler handler404;
+
     public RouterHandler routerHandler;
 
+    public boolean isRunning = false;
 
-    private Server(int port)
+
+    public Server(ILogger logger)
+    {
+        this.logger = logger;
+        init();
+    }
+
+    public Server(ILogger logger, IRequestHandler handlr404)
+    {
+
+        this.logger = logger;
+        handler404 = handlr404;
+        init();
+    }
+
+    private void init()
+    {
+        routesMap = new ArrayList<Route>();
+
+        routes = new ArrayList<String>();
+
+        middlewares = new HashMap<String, IMiddleware>();
+
+        routerHandler = new RouterHandler(this, logger);
+
+    }
+
+    public void start(int port)
     {
         this.PORT = port;
-        routesMap = new ArrayList<Route>();
-        routes = new ArrayList<String>();
-        routerHandler = new RouterHandler();
+
         try {
 
             httpServer =  HttpServer.create(new InetSocketAddress(PORT), 0);
+            httpServer.createContext("/", routerHandler);
+            httpServer.setExecutor(null);
+            httpServer.start();
+
+            isRunning = true;
+
+            logger.info(this.getClass().getName() ,"Server start at http://localhost:" + PORT);
         } catch (IOException e) {
-            System.out.println("SERVER_CREATE_ERROR: " + e.getMessage());
+            logger.info("SERVER_CREATE_ERROR: " + e.getMessage());
             e.printStackTrace();
         }
+
+
     }
 
-    public static Server getInstance(int port)
+    public void stop()
     {
-        if(instance == null) {
-            instance = new Server(port);
-        }
-        return instance;
+        isRunning = false;
     }
 
-
-
-    public void start()
+    public boolean isRunning()
     {
-        httpServer.createContext("/", routerHandler);
-        httpServer.setExecutor(null);
-        httpServer.start();
+        return isRunning;
     }
 
     public RouterHandler getRouterHandler()
@@ -65,6 +108,39 @@ public class Server implements IServer {
         this.routerHandler = router;
     }
 
+    public void registerMiddlewares(Map<String, Object> instances)
+    {
+        //Map<String, String> instances = new HashMap<>();
+        for (Map.Entry<String, Object> provider : instances.entrySet())
+        {
+
+            Provider instance = new Provider();
+            if (!provider.getValue().getClass().toString().contains("class")) return;
+            String className = provider.getValue().toString().split(" ")[1];
+
+            registerMiddleware(provider.getKey(), (IMiddleware) Builder.createInstance(className));
+        }
+
+    }
+
+    private void registerMiddleware(String key, IMiddleware middleware)
+    {
+        logger.debug("Register Middleware: " + key);
+        middlewares.put(key, middleware);
+    }
+
+    public IMiddleware getMiddlware(String key)
+    {
+        logger.debug("Calling Middleware: " + key);
+        if (middlewares.containsKey(key)) {
+            return middlewares.get(key);
+        } else {
+            logger.debug("Middleware not founds: " + key);
+        }
+        return null;
+    }
+
+
     public static boolean existRoute(String url)
     {
         if (routes.contains(url)) {
@@ -73,4 +149,7 @@ public class Server implements IServer {
         return false;
     }
 
+    public static IRequestHandler getHandler404() {
+        return handler404;
+    }
 }

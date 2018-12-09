@@ -4,10 +4,9 @@ import com.skillcorp.sejoframework.contracts.http.IRequestHandler;
 import com.skillcorp.sejoframework.web.Request;
 import com.skillcorp.sejoframework.web.Response;
 
-public class PageNotFound implements IRequestHandler {
+public class PageNotFound implements IRequestHandler  {
 
-    @Override
-    public Response execute(Request request, Response response) {
-        return response.send("URL not exists", 404);
+    public void index(Request request, Response response) {
+        response.send("URL not exists", 404);
     }
 }
