@@ -3,27 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="f9321a86-c831-4830-9842-57bc261102e2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SejoFramework/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SejoFramework/app/Bootstrap.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SejoFramework/com/skillcorp/sejoframework/web/Server.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/Bootstrap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Bootstrap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/bootstrap/Middlewares.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/bootstrap/Middlewares.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/bootstrap/Providers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/bootstrap/Providers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SejoFramework/META-INF/SejoFramework.kotlin_module" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/http/Routes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/http/Routes.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/http/handlers/HomeHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/http/handlers/HomeHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/http/handlers/PageNotFound.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/http/handlers/PageNotFound.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/http/middlewares/TokenAuthenticartion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/http/middlewares/TokenAuthenticartion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/skillcorp/sejoframework/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/skillcorp/sejoframework/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/skillcorp/sejoframework/contracts/http/IRequestHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/skillcorp/sejoframework/contracts/http/IRequestHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/skillcorp/sejoframework/contracts/http/IServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/skillcorp/sejoframework/contracts/http/IServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/skillcorp/sejoframework/contracts/middlewares/IMiddleware.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/skillcorp/sejoframework/contracts/middlewares/IMiddleware.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/skillcorp/sejoframework/contracts/providers/Provider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/skillcorp/sejoframework/providers/Provider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/skillcorp/sejoframework/web/Request.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/skillcorp/sejoframework/web/Request.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/skillcorp/sejoframework/web/Response.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/skillcorp/sejoframework/web/Response.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/skillcorp/sejoframework/web/Route.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/skillcorp/sejoframework/web/Route.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/skillcorp/sejoframework/web/RouterHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/skillcorp/sejoframework/web/RouterHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/skillcorp/sejoframework/web/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/skillcorp/sejoframework/web/Server.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -43,16 +27,14 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/skillcorp/sejoframework/web/RouterHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="244" column="14" selection-start-line="244" selection-start-column="14" selection-end-line="244" selection-end-column="14" />
+            <state relative-caret-position="368">
+              <caret line="129" column="22" selection-start-line="129" selection-start-column="22" selection-end-line="129" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1908#1909#0" expanded="true" />
-                <element signature="e#1949#1950#0" expanded="true" />
-                <element signature="e#7812#7813#0" expanded="true" />
-                <element signature="e#7858#7859#0" expanded="true" />
-                <element signature="e#8711#8712#0" expanded="true" />
-                <element signature="e#8751#8752#0" expanded="true" />
+                <element signature="e#8899#8900#0" expanded="true" />
+                <element signature="e#8945#8946#0" expanded="true" />
+                <element signature="e#9855#9856#0" expanded="true" />
+                <element signature="e#9895#9896#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -61,20 +43,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/skillcorp/sejoframework/web/Route.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/Bootstrap.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
-              <caret line="20" column="56" selection-start-line="20" selection-start-column="56" selection-end-line="20" selection-end-column="56" />
+            <state relative-caret-position="440">
+              <caret line="37" column="5" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -83,10 +53,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/app/http/handlers/HomeHandler.java">
+        <entry file="file://$PROJECT_DIR$/src/com/skillcorp/sejoframework/helpers/Validator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="36" column="12" selection-start-line="36" selection-start-column="12" selection-end-line="36" selection-end-column="12" />
+            <state relative-caret-position="-658">
+              <caret line="46" column="32" selection-start-line="46" selection-start-column="32" selection-end-line="46" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -95,15 +65,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/skillcorp/sejoframework/Application.java">
+        <entry file="file://$PROJECT_DIR$/src/app/http/handlers/HomeHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="35" column="13" lean-forward="true" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
+            <state relative-caret-position="304">
+              <caret line="25" column="39" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2179#2180#0" expanded="true" />
-                <element signature="e#2211#2212#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/skillcorp/sejoframework/helpers/RuleValidator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -111,7 +88,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/http/handlers/PageNotFound.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
+            <state relative-caret-position="102">
               <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -121,33 +98,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/skillcorp/sejoframework/contracts/http/IWebServer.java">
+        <entry file="file://$PROJECT_DIR$/src/com/skillcorp/sejoframework/contracts/http/IRequestValidator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/skillcorp/sejoframework/web/RequestHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="226">
-              <caret line="14" lean-forward="true" selection-start-line="10" selection-start-column="3" selection-end-line="14" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#367#368#0" expanded="true" />
-                <element signature="e#399#400#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/skillcorp/sejoframework/contracts/http/IRequestHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+            <state relative-caret-position="153">
+              <caret line="9" column="53" selection-start-line="9" selection-start-column="53" selection-end-line="9" selection-end-column="53" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -156,10 +110,37 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/skillcorp/sejoframework/web/Server.java">
+        <entry file="file://$PROJECT_DIR$/src/app/http/Routes.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="149">
-              <caret line="42" column="11" selection-start-line="42" selection-start-column="11" selection-end-line="42" selection-end-column="11" />
+            <state relative-caret-position="355">
+              <caret line="29" column="38" lean-forward="true" selection-start-line="29" selection-start-column="38" selection-end-line="29" selection-end-column="38" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/http/handlers/validators/HomeValidator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="21" column="36" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#325#326#0" expanded="true" />
+                <element signature="e#352#353#0" expanded="true" />
+                <element signature="e#483#506#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/skillcorp/sejoframework/web/Request.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="34" column="39" selection-start-line="34" selection-start-column="39" selection-end-line="34" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -180,7 +161,6 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>providers</find>
-      <find>providers</find>
       <find>setRoutes</find>
       <find>routerHandler</find>
       <find>app.http.handlers.HomeHandler</find>
@@ -193,6 +173,7 @@
       <find>urlX</find>
       <find>INDEX</find>
       <find>routeParams</find>
+      <find>params</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -224,8 +205,6 @@
         <option value="$PROJECT_DIR$/src/com/skillcorp/sejoframework/contracts/http/IWebServer.java" />
         <option value="$PROJECT_DIR$/src/com/skillcorp/sejoframework/web/Server.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
-        <option value="$PROJECT_DIR$/src/app/http/Routes.java" />
-        <option value="$PROJECT_DIR$/src/com/skillcorp/sejoframework/web/Route.java" />
         <option value="$PROJECT_DIR$/src/com/skillcorp/sejoframework/web/Request.java" />
         <option value="$PROJECT_DIR$/src/com/skillcorp/sejoframework/helpers/Builder.java" />
         <option value="$PROJECT_DIR$/src/com/skillcorp/sejoframework/providers/ServiceProvider.java" />
@@ -235,8 +214,14 @@
         <option value="$PROJECT_DIR$/src/com/skillcorp/sejoframework/contracts/http/IRequestHandler.java" />
         <option value="$PROJECT_DIR$/src/app/http/handlers/PageNotFound.java" />
         <option value="$PROJECT_DIR$/src/com/skillcorp/sejoframework/web/RequestHandler.java" />
-        <option value="$PROJECT_DIR$/src/com/skillcorp/sejoframework/web/RouterHandler.java" />
+        <option value="$PROJECT_DIR$/src/com/skillcorp/sejoframework/contracts/http/IRequestValidator.java" />
+        <option value="$PROJECT_DIR$/src/com/skillcorp/sejoframework/web/Route.java" />
+        <option value="$PROJECT_DIR$/src/com/skillcorp/sejoframework/helpers/RuleValidator.java" />
+        <option value="$PROJECT_DIR$/src/app/http/Routes.java" />
+        <option value="$PROJECT_DIR$/src/app/http/handlers/validators/HomeValidator.java" />
         <option value="$PROJECT_DIR$/src/app/http/handlers/HomeHandler.java" />
+        <option value="$PROJECT_DIR$/src/com/skillcorp/sejoframework/web/RouterHandler.java" />
+        <option value="$PROJECT_DIR$/src/com/skillcorp/sejoframework/helpers/Validator.java" />
       </list>
     </option>
   </component>
@@ -260,83 +245,101 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="SejoFramework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SejoFramework" type="462c0819:PsiDirectoryNode" />
+              <item name="sejo4j" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sejo4j" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="SejoFramework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SejoFramework" type="462c0819:PsiDirectoryNode" />
+              <item name="sejo4j" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sejo4j" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="SejoFramework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SejoFramework" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SejoFramework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SejoFramework" type="462c0819:PsiDirectoryNode" />
+              <item name="sejo4j" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sejo4j" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="bootstrap" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="SejoFramework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SejoFramework" type="462c0819:PsiDirectoryNode" />
+              <item name="sejo4j" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sejo4j" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="http" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="SejoFramework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SejoFramework" type="462c0819:PsiDirectoryNode" />
+              <item name="sejo4j" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sejo4j" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="http" type="462c0819:PsiDirectoryNode" />
               <item name="handlers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="SejoFramework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SejoFramework" type="462c0819:PsiDirectoryNode" />
+              <item name="sejo4j" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sejo4j" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="http" type="462c0819:PsiDirectoryNode" />
-              <item name="middlewares" type="462c0819:PsiDirectoryNode" />
+              <item name="handlers" type="462c0819:PsiDirectoryNode" />
+              <item name="validators" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="SejoFramework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SejoFramework" type="462c0819:PsiDirectoryNode" />
+              <item name="sejo4j" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sejo4j" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="sejoframework" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="SejoFramework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SejoFramework" type="462c0819:PsiDirectoryNode" />
+              <item name="sejo4j" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sejo4j" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="sejoframework" type="462c0819:PsiDirectoryNode" />
+              <item name="contracts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sejo4j" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sejo4j" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="sejoframework" type="462c0819:PsiDirectoryNode" />
+              <item name="contracts" type="462c0819:PsiDirectoryNode" />
+              <item name="http" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sejo4j" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sejo4j" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="sejoframework" type="462c0819:PsiDirectoryNode" />
+              <item name="helpers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sejo4j" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sejo4j" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="sejoframework" type="462c0819:PsiDirectoryNode" />
+              <item name="providers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sejo4j" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sejo4j" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="sejoframework" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SejoFramework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SejoFramework" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544336245685" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544562877924" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
@@ -397,10 +400,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24966443" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2521322" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -409,16 +411,15 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4986577" visible="true" weight="0.3243626" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4986577" visible="true" weight="0.32394367" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39943343" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49932885" weight="0.3286119" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49932885" weight="0.32827735" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.3286119" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5013423" side_tool="true" weight="0.3286119" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.3286119" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.3286119" />
-      <window_info anchor="right" id="Coverage" sideWeight="0.5021097" side_tool="true" weight="0.3295302" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32827735" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" sideWeight="0.4978903" weight="0.24966443" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -427,6 +428,7 @@
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Coverage" order="8" sideWeight="0.5021097" side_tool="true" weight="0.3295302" />
     </layout>
     <layout-to-restore>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24966443" />
@@ -483,13 +485,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/providers/DBProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/providers/DBProvider.java" />
     <entry file="file://$PROJECT_DIR$/SejoFramework.iml">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -497,17 +493,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/src.zip!/java/util/HashMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="473" column="11" selection-start-line="473" selection-start-column="11" selection-end-line="473" selection-end-column="11" />
-          <folding>
-            <element signature="e#19296#19297#0" expanded="true" />
-            <element signature="e#19379#19380#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/src.zip!/java/util/HashMap.java" />
     <entry file="file://$PROJECT_DIR$/src/com/skillcorp/sejoframework/database/DB.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
@@ -529,17 +515,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/skillcorp/sejoframework/helpers/Logger.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-141">
-          <caret line="37" column="39" selection-start-line="37" selection-start-column="39" selection-end-line="37" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1342#1343#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -604,37 +579,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/skillcorp/sejoframework/web/Request.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="34" column="60" selection-start-line="34" selection-start-column="60" selection-end-line="34" selection-end-column="60" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/skillcorp/sejoframework/helpers/Builder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="28" column="35" lean-forward="true" selection-start-line="28" selection-start-column="35" selection-end-line="28" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#804#820#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/http/Routes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-239">
-          <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/skillcorp/sejoframework/providers/ServiceProvider.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-17">
@@ -655,48 +599,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/skillcorp/sejoframework/contracts/http/IWebServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/skillcorp/sejoframework/web/Server.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="42" column="11" selection-start-line="42" selection-start-column="11" selection-end-line="42" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/skillcorp/sejoframework/web/Route.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/skillcorp/sejoframework/Application.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="35" column="13" lean-forward="true" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
+        <state relative-caret-position="408">
+          <caret line="35" column="13" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2179#2180#0" expanded="true" />
-            <element signature="e#2211#2212#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/skillcorp/sejoframework/contracts/http/IWebServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/skillcorp/sejoframework/contracts/http/IRequestHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
+        <state relative-caret-position="102">
           <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -706,18 +628,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/Bootstrap.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="20" column="56" selection-start-line="20" selection-start-column="56" selection-end-line="20" selection-end-column="56" />
+        <state relative-caret-position="544">
+          <caret line="32" column="36" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/http/handlers/PageNotFound.java">
+    <entry file="file://$PROJECT_DIR$/src/com/skillcorp/sejoframework/helpers/Logger.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
+        <state relative-caret-position="72">
+          <caret line="37" column="39" selection-start-line="37" selection-start-column="39" selection-end-line="37" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1304#1305#0" expanded="true" />
+            <element signature="e#1342#1343#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/skillcorp/sejoframework/helpers/Builder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="35" lean-forward="true" selection-start-line="28" selection-start-column="35" selection-end-line="28" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -726,36 +660,122 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/skillcorp/sejoframework/web/RequestHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="14" lean-forward="true" selection-start-line="10" selection-start-column="3" selection-end-line="14" />
+        <state relative-caret-position="187">
+          <caret line="14" selection-start-line="10" selection-start-column="3" selection-end-line="14" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#367#368#0" expanded="true" />
-            <element signature="e#399#400#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/skillcorp/sejoframework/web/RouterHandler.java">
+    <entry file="file://$PROJECT_DIR$/src/com/skillcorp/sejoframework/web/Server.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="244" column="14" selection-start-line="244" selection-start-column="14" selection-end-line="244" selection-end-column="14" />
+        <state relative-caret-position="-954">
+          <caret line="42" column="11" selection-start-line="42" selection-start-column="11" selection-end-line="42" selection-end-column="11" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1908#1909#0" expanded="true" />
-            <element signature="e#1949#1950#0" expanded="true" />
-            <element signature="e#7812#7813#0" expanded="true" />
-            <element signature="e#7858#7859#0" expanded="true" />
-            <element signature="e#8711#8712#0" expanded="true" />
-            <element signature="e#8751#8752#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/skillcorp/sejoframework/contracts/http/IRequestValidator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="53" selection-start-line="9" selection-start-column="53" selection-end-line="9" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/skillcorp/sejoframework/web/Route.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="37" column="5" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/skillcorp/sejoframework/web/Request.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="34" column="39" selection-start-line="34" selection-start-column="39" selection-end-line="34" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/http/handlers/PageNotFound.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/skillcorp/sejoframework/helpers/RuleValidator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/http/Routes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="355">
+          <caret line="29" column="38" lean-forward="true" selection-start-line="29" selection-start-column="38" selection-end-line="29" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/http/handlers/validators/HomeValidator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="36" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#325#326#0" expanded="true" />
+            <element signature="e#352#353#0" expanded="true" />
+            <element signature="e#483#506#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/http/handlers/HomeHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="36" column="12" selection-start-line="36" selection-start-column="12" selection-end-line="36" selection-end-column="12" />
+        <state relative-caret-position="304">
+          <caret line="25" column="39" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/skillcorp/sejoframework/web/RouterHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="129" column="22" selection-start-line="129" selection-start-column="22" selection-end-line="129" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#8899#8900#0" expanded="true" />
+            <element signature="e#8945#8946#0" expanded="true" />
+            <element signature="e#9855#9856#0" expanded="true" />
+            <element signature="e#9895#9896#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/skillcorp/sejoframework/helpers/Validator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-658">
+          <caret line="46" column="32" selection-start-line="46" selection-start-column="32" selection-end-line="46" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

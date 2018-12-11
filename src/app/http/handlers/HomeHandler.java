@@ -23,7 +23,7 @@ public class HomeHandler extends RequestHandler implements IRequestHandler {
         //DB db = (DB) this.container.getProvider("DB");
        try {
           //  System.out.println(db.getMessage());
-            res.send("Hello, Sejo say: "+message + " with DI: " + "db.getMessage()" + " > ");
+            res.send("Hello, Sejo say:  with DI: " + "db.getMessage()" + " > ");
         } catch(Exception ex) {
            System.out.println("ERRROR "+ex.toString());
            res.send("INTERNAL SERVER", 500);
@@ -34,5 +34,10 @@ public class HomeHandler extends RequestHandler implements IRequestHandler {
     {
         DB db = (DB) this.getContainer().getProvider("DB2");
         res.send("User: "+req.query.get("user_id") + " con "+req.query.get("a"));
+    }
+
+    public void store(Request req, Response res)
+    {
+        res.send("User: "+req.query.get("user_id") + " con "+req.query.get("email"));
     }
 }

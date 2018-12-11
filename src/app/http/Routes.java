@@ -1,6 +1,7 @@
 package app.http;
 
 import app.http.handlers.HomeHandler;
+import app.http.handlers.validators.HomeValidator;
 import com.skillcorp.sejoframework.web.RouterHandler;
 
 public class Routes {
@@ -25,6 +26,10 @@ public class Routes {
 
         router.get("/test", HomeHandler.class, "action")
                 .middleware("auth");
+
+        router.get("/store/users/[user_id]", HomeHandler.class, "store")
+                .middleware("auth")
+                .validator(HomeValidator.class);
     }
 
     public RouterHandler getRouter()

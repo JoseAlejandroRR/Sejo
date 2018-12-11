@@ -4,11 +4,13 @@ import app.bootstrap.Middlewares;
 import app.http.handlers.HomeHandler;
 import com.skillcorp.sejoframework.Application;
 import com.skillcorp.sejoframework.contracts.http.IRequestHandler;
+import com.skillcorp.sejoframework.contracts.http.IRequestValidator;
 import com.skillcorp.sejoframework.contracts.http.IServer;
 import com.skillcorp.sejoframework.contracts.http.IWebServer;
 import com.skillcorp.sejoframework.contracts.middlewares.IMiddleware;
 import com.skillcorp.sejoframework.contracts.providers.ILogger;
 import com.skillcorp.sejoframework.helpers.Builder;
+import com.skillcorp.sejoframework.helpers.Validator;
 import com.skillcorp.sejoframework.providers.ServiceProvider;
 import com.sun.net.httpserver.HttpExchange;
 import com.sun.net.httpserver.HttpHandler;
@@ -72,6 +74,8 @@ public class RouterHandler implements HttpHandler {
         startMemory = Runtime.getRuntime().totalMemory()-Runtime.getRuntime().freeMemory();
         routeParams = null;
         boolean prevent = false;
+        boolean failValidator = false;
+
 
         Request request = new Request(exchange);
         Response response = new Response();
@@ -92,13 +96,32 @@ public class RouterHandler implements HttpHandler {
                         prevent = true;
                     }
                 }
-                if (!prevent) {
+
+                if(route.rulesGet != null && route.rulesGet.size() > 0 || route.rulesPost != null && route.rulesPost.size() > 0)
+                {
+                    HashMap<String, String> error = Validator.array(route.rulesGet, request.query);
+                    String messageError = "";
+                    if (error.size() > 0) {
+                        for (HashMap.Entry<String, String> err: error.entrySet()) {
+                            logger.debug("ERROR: "+err.getKey(), err.getValue());
+                            if (!failValidator) {
+                                messageError = err.getValue();
+                            }
+                        }
+                        response.send(messageError, 500);
+                    }
+                }
+
+                logger.debug("VALID: ",String.valueOf(prevent),String.valueOf(failValidator));
+
+                if (!prevent || !failValidator) {
+                    //logger.debug("IF VALA");
                     for(Map.Entry<String, String> item : routeParams.entrySet())
                     {
                         //logger.debug("var", item.getKey(), item.getValue());
                         request.query.put(item.getKey(),item.getValue());
                     }
-                    logger.debug("params", request.query.keySet().toString());
+                    //logger.debug("params", request.query.keySet().toString());
                     if (route.methodHandlerName==null) {
                         callMethodAtInstance(route.handler,"index", request, response);
                     } else {
@@ -288,6 +311,27 @@ public class RouterHandler implements HttpHandler {
         return this;
     }
 
+    public RouterHandler validator(Object validator)
+    {
+        IRequestValidator validatorInstance = null;
+        if (!validator.getClass().toString().contains("class")) return this;
+        String className = validator.toString().split(" ")[1];
+
+        try {
+            validatorInstance = (IRequestValidator) Builder.createInstance(className);
+        } catch (Exception ex)
+        {
+            logger.debug("Handler Wrong: "+validator.getClass().getName());
+        }
+
+        if (validatorInstance != null) {
+            Route route = routesMap.get(routes.size()-1);
+            route.rulesGet = validatorInstance.getRulesGet();
+            route.rulesPost = validatorInstance.getRulesPost();
+        }
+        return this;
+    }
+
     private Response processMiddlewares(Route route, Request request, Response response)
     {
         Response res = null;
@@ -312,23 +356,23 @@ public class RouterHandler implements HttpHandler {
         try {
             method = obj.getClass().getMethod(methodName, Request.class, Response.class);
         } catch (SecurityException e) {
-            logger.debug(e.getMessage());
+            logger.debug("Cant execute method by: " + e.getMessage());
         }
         catch (NoSuchMethodException e) {
-            logger.debug(e.getMessage());
+            logger.debug("Method not exists: " + e.getMessage());
         }
 
         try {
             method.invoke(obj, request, response);
         } catch (IllegalArgumentException e) {
-            logger.debug(e.getMessage());
+            logger.debug("Error calling method: " + e.getMessage());
         }
         catch (IllegalAccessException e) {
-            logger.debug(e.getMessage());
+            logger.debug("Error: " + e.getMessage());
 
         }
         catch (InvocationTargetException e) {
-            logger.debug(e.getMessage());
+            logger.debug("Error: " + e.getMessage());
         }
     }
 

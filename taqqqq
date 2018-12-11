@@ -1,0 +1,904 @@
+[1mdiff --git a/.idea/workspace.xml b/.idea/workspace.xml[m
+[1mindex b688d30..46eaeca 100644[m
+[1m--- a/.idea/workspace.xml[m
+[1m+++ b/.idea/workspace.xml[m
+[36m@@ -3,27 +3,11 @@[m
+   <component name="ChangeListManager">[m
+     <list default="true" id="f9321a86-c831-4830-9842-57bc261102e2" name="Default Changelist" comment="">[m
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />[m
+[31m-      <change beforePath="$PROJECT_DIR$/out/production/SejoFramework/Main.class" beforeDir="false" />[m
+[31m-      <change beforePath="$PROJECT_DIR$/out/production/SejoFramework/app/Bootstrap.class" beforeDir="false" />[m
+[31m-      <change beforePath="$PROJECT_DIR$/out/production/SejoFramework/com/skillcorp/sejoframework/web/Server.class" beforeDir="false" />[m
+[31m-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />[m
+[31m-      <change beforePath="$PROJECT_DIR$/src/app/Bootstrap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Bootstrap.java" afterDir="false" />[m
+[31m-      <change beforePath="$PROJECT_DIR$/src/app/bootstrap/Middlewares.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/bootstrap/Middlewares.java" afterDir="false" />[m
+[31m-      <change beforePath="$PROJECT_DIR$/src/app/bootstrap/Providers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/bootstrap/Providers.java" afterDir="false" />[m
+[32m+[m[32m      <change beforePath="$PROJECT_DIR$/out/production/SejoFramework/META-INF/SejoFramework.kotlin_module" beforeDir="false" />[m
+       <change beforePath="$PROJECT_DIR$/src/app/http/Routes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/http/Routes.java" afterDir="false" />[m
+       <change beforePath="$PROJECT_DIR$/src/app/http/handlers/HomeHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/http/handlers/HomeHandler.java" afterDir="false" />[m
+[31m-      <change beforePath="$PROJECT_DIR$/src/app/http/handlers/PageNotFound.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/http/handlers/PageNotFound.java" afterDir="false" />[m
+[31m-      <change beforePath="$PROJECT_DIR$/src/app/http/middlewares/TokenAuthenticartion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/http/middlewares/TokenAuthenticartion.java" afterDir="false" />[m
+[31m-      <change beforePath="$PROJECT_DIR$/src/com/skillcorp/sejoframework/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/skillcorp/sejoframework/Application.java" afterDir="false" />[m
+[31m-      <change beforePath="$PROJECT_DIR$/src/com/skillcorp/sejoframework/contracts/http/IRequestHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/skillcorp/sejoframework/contracts/http/IRequestHandler.java" afterDir="false" />[m
+[31m-      <change beforePath="$PROJECT_DIR$/src/com/skillcorp/sejoframework/contracts/http/IServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/skillcorp/sejoframework/contracts/http/IServer.java" afterDir="false" />[m
+[31m-      <change beforePath="$PROJECT_DIR$/src/com/skillcorp/sejoframework/contracts/middlewares/IMiddleware.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/skillcorp/sejoframework/contracts/middlewares/IMiddleware.java" afterDir="false" />[m
+[31m-      <change beforePath="$PROJECT_DIR$/src/com/skillcorp/sejoframework/contracts/providers/Provider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/skillcorp/sejoframework/providers/Provider.java" afterDir="false" />[m
+[31m-      <change beforePath="$PROJECT_DIR$/src/com/skillcorp/sejoframework/web/Request.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/skillcorp/sejoframework/web/Request.java" afterDir="false" />[m
+[31m-      <change beforePath="$PROJECT_DIR$/src/com/skillcorp/sejoframework/web/Response.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/skillcorp/sejoframework/web/Response.java" afterDir="false" />[m
+       <change beforePath="$PROJECT_DIR$/src/com/skillcorp/sejoframework/web/Route.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/skillcorp/sejoframework/web/Route.java" afterDir="false" />[m
+       <change beforePath="$PROJECT_DIR$/src/com/skillcorp/sejoframework/web/RouterHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/skillcorp/sejoframework/web/RouterHandler.java" afterDir="false" />[m
+[31m-      <change beforePath="$PROJECT_DIR$/src/com/skillcorp/sejoframework/web/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/skillcorp/sejoframework/web/Server.java" afterDir="false" />[m
+     </list>[m
+     <ignored path="$PROJECT_DIR$/out/" />[m
+     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />[m
+[36m@@ -43,16 +27,14 @@[m
+       <file pinned="false" current-in-tab="false">[m
+         <entry file="file://$PROJECT_DIR$/src/com/skillcorp/sejoframework/web/RouterHandler.java">[m
+           <provider selected="true" editor-type-id="text-editor">[m
+[31m-            <state relative-caret-position="195">[m
+[31m-              <caret line="244" column="14" selection-start-line="244" selection-start-column="14" selection-end-line="244" selection-end-column="14" />[m
+[32m+[m[32m            <state relative-caret-position="368">[m
+[32m+[m[32m              <caret line="129" column="22" selection-start-line="129" selection-start-column="22" selection-end-line="129" selection-end-column="22" />[m
+               <folding>[m
+                 <element signature="imports" expanded="true" />[m
+[31m-                <element signature="e#1908#1909#0" expanded="true" />[m
+[31m-                <element signature="e#1949#1950#0" expanded="true" />[m
+[31m-                <element signature="e#7812#7813#0" expanded="true" />[m
+[31m-                <element signature="e#7858#7859#0" expanded="true" />[m
+[31m-                <element signature="e#8711#8712#0" expanded="true" />[m
+[31m-                <element signature="e#8751#8752#0" expanded="true" />[m
+[32m+[m[32m                <element signature="e#8899#8900#0" expanded="true" />[m
+[32m+[m[32m                <element signature="e#8945#8946#0" expanded="true" />[m
+[32m+[m[32m                <element signature="e#9855#9856#0" expanded="true" />[m
+[32m+[m[32m                <element signature="e#9895#9896#0" expanded="true" />[m
+               </folding>[m
+             </state>[m
+           </provider>[m
+[36m@@ -61,8 +43,8 @@[m
+       <file pinned="false" current-in-tab="false">[m
+         <entry file="file://$PROJECT_DIR$/src/com/skillcorp/sejoframework/web/Route.java">[m
+           <provider selected="true" editor-type-id="text-editor">[m
+[31m-            <state relative-caret-position="84">[m
+[31m-              <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />[m
+[32m+[m[32m            <state relative-caret-position="440">[m
+[32m+[m[32m              <caret line="37" column="5" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />[m
+               <folding>[m
+                 <element signature="imports" expanded="true" />[m
+               </folding>[m
+[36m@@ -70,11 +52,11 @@[m
+           </provider>[m
+         </entry>[m
+       </file>[m
+[31m-      <file pinned="false" current-in-tab="false">[m
+[31m-        <entry file="file://$PROJECT_DIR$/src/app/Bootstrap.java">[m
+[32m+[m[32m      <file pinned="false" current-in-tab="true">[m
+[32m+[m[32m        <entry file="file://$PROJECT_DIR$/src/com/skillcorp/sejoframework/helpers/Validator.java">[m
+           <provider selected="true" editor-type-id="text-editor">[m
+[31m-            <state relative-caret-position="141">[m
+[31m-              <caret line="20" column="56" selection-start-line="20" selection-start-column="56" selection-end-line="20" selection-end-column="56" />[m
+[32m+[m[32m            <state relative-caret-position="-658">[m
+[32m+[m[32m              <caret line="46" column="32" selection-start-line="46" selection-start-column="32" selection-end-line="46" selection-end-column="32" />[m
+               <folding>[m
+                 <element signature="imports" expanded="true" />[m
+               </folding>[m
+[36m@@ -82,11 +64,11 @@[m
+           </provider>[m
+         </entry>[m
+       </file>[m
+[31m-      <file pinned="false" current-in-tab="true">[m
+[32m+[m[32m      <file pinned="false" current-in-tab="false">[m
+         <entry file="file://$PROJECT_DIR$/src/app/http/handlers/HomeHandler.java">[m
+           <provider selected="true" editor-type-id="text-editor">[m
+[31m-            <state relative-caret-position="315">[m
+[31m-              <caret line="36" column="12" selection-start-line="36" selection-start-column="12" selection-end-line="36" selection-end-column="12" />[m
+[32m+[m[32m            <state relative-caret-position="304">[m
+[32m+[m[32m              <caret line="25" column="39" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />[m
+               <folding>[m
+                 <element signature="imports" expanded="true" />[m
+               </folding>[m
+[36m@@ -95,15 +77,10 @@[m
+         </entry>[m
+       </file>[m
+       <file pinned="false" current-in-tab="false">[m
+[31m-        <entry file="file://$PROJECT_DIR$/src/com/skillcorp/sejoframework/Application.java">[m
+[32m+[m[32m        <entry file="file://$PROJECT_DIR$/src/com/skillcorp/sejoframework/helpers/RuleValidator.java">[m
+           <provider selected="true" editor-type-id="text-editor">[m
+[31m-            <state relative-caret-position="216">[m
+[31m-              <caret line="35" column="13" lean-forward="true" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />[m
+[31m-              <folding>[m
+[31m-                <element signature="imports" expanded="true" />[m
+[31m-                <element signature="e#2179#2180#0" expanded="true" />[m
+[31m-                <element signature="e#2211#2212#0" expanded="true" />[m
+[31m-              </folding>[m
+[32m+[m[32m            <state relative-caret-position="170">[m
+[32m+[m[32m              <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />[m
+             </state>[m
+           </provider>[m
+         </entry>[m
+[36m@@ -111,7 +88,7 @@[m
+       <file pinned="false" current-in-tab="false">[m
+         <entry file="file://$PROJECT_DIR$/src/app/http/handlers/PageNotFound.java">[m
+           <provider selected="true" editor-type-id="text-editor">[m
+[31m-            <state relative-caret-position="126">[m
+[32m+[m[32m            <state relative-caret-position="102">[m
+               <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />[m
+               <folding>[m
+                 <element signature="imports" expanded="true" />[m
+[36m@@ -121,45 +98,49 @@[m
+         </entry>[m
+       </file>[m
+       <file pinned="false" current-in-tab="false">[m
+[31m-        <entry file="file://$PROJECT_DIR$/src/com/skillcorp/sejoframework/contracts/http/IWebServer.java">[m
+[32m+[m[32m        <entry file="file://$PROJECT_DIR$/src/com/skillcorp/sejoframework/contracts/http/IRequestValidator.java">[m
+           <provider selected="true" editor-type-id="text-editor">[m
+[31m-            <state relative-caret-position="84">[m
+[31m-              <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />[m
+[32m+[m[32m            <state relative-caret-position="153">[m
+[32m+[m[32m              <caret line="9" column="53" selection-start-line="9" selection-start-column="53" selection-end-line="9" selection-end-column="53" />[m
+[32m+[m[32m              <folding>[m
+[32m+[m[32m                <element signature="imports" expanded="true" />[m
+[32m+[m[32m              </folding>[m
+             </state>[m
+           </provider>[m
+         </entry>[m
+       </file>[m
+       <file pinned="false" current-in-tab="false">[m
+[31m-        <entry file="file://$PROJECT_DIR$/src/com/skillcorp/sejoframework/web/RequestHandler.java">[m
+[32m+[m[32m        <entry file="file://$PROJECT_DIR$/src/app/http/Routes.java">[m
+           <provider selected="true" editor-type-id="text-editor">[m
+[31m-            <state relative-caret-position="226">[m
+[31m-              <caret line="14" lean-forward="true" selection-start-line="10" selection-start-column="3" selection-end-line="14" />[m
+[32m+[m[32m            <state relative-caret-position="355">[m
+[32m+[m[32m              <caret line="29" column="38" lean-forward="true" selection-start-line="29" selection-start-column="38" selection-end-line="29" selection-end-column="38" />[m
+               <folding>[m
+                 <element signature="imports" expanded="true" />[m
+[31m-                <element signature="e#367#368#0" expanded="true" />[m
+[31m-                <element signature="e#399#400#0" expanded="true" />[m
+               </folding>[m
+             </state>[m
+           </provider>[m
+         </entry>[m
+       </file>[m
+       <file pinned="false" current-in-tab="false">[m
+[31m-        <entry file="file://$PROJECT_DIR$/src/com/skillcorp/sejoframework/contracts/http/IRequestHandler.java">[m
+[32m+[m[32m        <entry file="file://$PROJECT_DIR$/src/app/http/handlers/validators/HomeValidator.java">[m
+           <provider selected="true" editor-type-id="text-editor">[m
+[31m-            <state relative-caret-position="189">[m
+[31m-              <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />[m
+[32m+[m[32m            <state relative-caret-position="357">[m
+[32m+[m[32m              <caret line="21" column="36" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />[m
+               <folding>[m
+                 <element signature="imports" expanded="true" />[m
+[32m+[m[32m                <element signature="e#325#326#0" expanded="true" />[m
+[32m+[m[32m                <element signature="e#352#353#0" expanded="true" />[m
+[32m+[m[32m                <element signature="e#483#506#0" expanded="true" />[m
+               </folding>[m
+             </state>[m
+           </provider>[m
+         </entry>[m
+       </file>[m
+       <file pinned="false" current-in-tab="false">[m
+[31m-        <entry file="file://$PROJECT_DIR$/src/com/skillcorp/sejoframework/web/Server.java">[m
+[32m+[m[32m        <entry file="file://$PROJECT_DIR$/src/com/skillcorp/sejoframework/web/Request.java">[m
+           <provider selected="true" editor-type-id="text-editor">[m
+[31m-            <state relative-caret-position="149">[m
+[31m-              <caret line="42" column="11" selection-start-line="42" selection-start-column="11" selection-end-line="42" selection-end-column="11" />[m
+[32m+[m[32m            <state relative-caret-position="374">[m
+[32m+[m[32m              <caret line="34" column="39" selection-start-line="34" selection-start-column="39" selection-end-line="34" selection-end-column="39" />[m
+               <folding>[m
+                 <element signature="imports" expanded="true" />[m
+               </folding>[m
+[36m@@ -179,7 +160,6 @@[m
+   </component>[m
+   <component name="FindInProjectRecents">[m
+     <findStrings>[m
+[31m-      <find>providers</find>[m
+       <find>providers</find>[m
+       <find>setRoutes</find>[m
+       <find>routerHandler</find>[m
+[36m@@ -193,6 +173,7 @@[m
+       <find>urlX</find>[m
+       <find>INDEX</find>[m
+       <find>routeParams</find>[m
+[32m+[m[32m      <find>params</find>[m
+     </findStrings>[m
+   </component>[m
+   <component name="Git.Settings">[m
+[36m@@ -224,8 +205,6 @@[m
+         <option value="$PROJECT_DIR$/src/com/skillcorp/sejoframework/contracts/http/IWebServer.java" />[m
+         <option value="$PROJECT_DIR$/src/com/skillcorp/sejoframework/web/Server.java" />[m
+         <option value="$PROJECT_DIR$/src/Main.java" />[m
+[31m-        <option value="$PROJECT_DIR$/src/app/http/Routes.java" />[m
+[31m-        <option value="$PROJECT_DIR$/src/com/skillcorp/sejoframework/web/Route.java" />[m
+         <option value="$PROJECT_DIR$/src/com/skillcorp/sejoframework/web/Request.java" />[m
+         <option value="$PROJECT_DIR$/src/com/skillcorp/sejoframework/helpers/Builder.java" />[m
+         <option value="$PROJECT_DIR$/src/com/skillcorp/sejoframework/providers/ServiceProvider.java" />[m
+[36m@@ -235,8 +214,14 @@[m
+         <option value="$PROJECT_DIR$/src/com/skillcorp/sejoframework/contracts/http/IRequestHandler.java" />[m
+         <option value="$PROJECT_DIR$/src/app/http/handlers/PageNotFound.java" />[m
+         <option value="$PROJECT_DIR$/src/com/skillcorp/sejoframework/web/RequestHandler.java" />[m
+[31m-        <option value="$PROJECT_DIR$/src/com/skillcorp/sejoframework/web/RouterHandler.java" />[m
+[32m+[m[32m        <option value="$PROJECT_DIR$/src/com/skillcorp/sejoframework/contracts/http/IRequestValidator.java" />[m
+[32m+[m[32m        <option value="$PROJECT_DIR$/src/com/skillcorp/sejoframework/web/Route.java" />[m
+[32m+[m[32m        <option value="$PROJECT_DIR$/src/com/skillcorp/sejoframework/helpers/RuleValidator.java" />[m
+[32m+[m[32m        <option value="$PROJECT_DIR$/src/app/http/Routes.java" />[m
+[32m+[m[32m        <option value="$PROJECT_DIR$/src/app/http/handlers/validators/HomeValidator.java" />[m
+         <option value="$PROJECT_DIR$/src/app/http/handlers/HomeHandler.java" />[m
+[32m+[m[32m        <option value="$PROJECT_DIR$/src/com/skillcorp/sejoframework/web/RouterHandler.java" />[m
+[32m+[m[32m        <option value="$PROJECT_DIR$/src/com/skillcorp/sejoframework/helpers/Validator.java" />[m
+       </list>[m
+     </option>[m
+   </component>[m
+[36m@@ -260,83 +245,101 @@[m
+       <foldersAlwaysOnTop value="true" />[m
+     </navigator>[m
+     <panes>[m
+[31m-      <pane id="PackagesPane" />[m
+[31m-      <pane id="Scope" />[m
+       <pane id="ProjectPane">[m
+         <subPane>[m
+           <expand>[m
+             <path>[m
+[31m-              <item name="SejoFramework" type="b2602c69:ProjectViewProjectNode" />[m
+[31m-              <item name="SejoFramework" type="462c0819:PsiDirectoryNode" />[m
+[32m+[m[32m              <item name="sejo4j" type="b2602c69:ProjectViewProjectNode" />[m
+[32m+[m[32m              <item name="sejo4j" type="462c0819:PsiDirectoryNode" />[m
+             </path>[m
+             <path>[m
+[31m-              <item name="SejoFramework" type="b2602c69:ProjectViewProjectNode" />[m
+[31m-              <item name="SejoFramework" type="462c0819:PsiDirectoryNode" />[m
+[32m+[m[32m              <item name="sejo4j" type="b2602c69:ProjectViewProjectNode" />[m
+[32m+[m[32m              <item name="sejo4j" type="462c0819:PsiDirectoryNode" />[m
+               <item name="src" type="462c0819:PsiDirectoryNode" />[m
+             </path>[m
+             <path>[m
+[31m-              <item name="SejoFramework" type="b2602c69:ProjectViewProjectNode" />[m
+[31m-              <item name="SejoFramework" type="462c0819:PsiDirectoryNode" />[m
+[32m+[m[32m              <item name="sejo4j" type="b2602c69:ProjectViewProjectNode" />[m
+[32m+[m[32m              <item name="sejo4j" type="462c0819:PsiDirectoryNode" />[m
+               <item name="src" type="462c0819:PsiDirectoryNode" />[m
+               <item name="app" type="462c0819:PsiDirectoryNode" />[m
+             </path>[m
+             <path>[m
+[31m-              <item name="SejoFramework" type="b2602c69:ProjectViewProjectNode" />[m
+[31m-              <item name="SejoFramework" type="462c0819:PsiDirectoryNode" />[m
+[32m+[m[32m              <item name="sejo4j" type="b2602c69:ProjectViewProjectNode" />[m
+[32m+[m[32m              <item name="sejo4j" type="462c0819:PsiDirectoryNode" />[m
+               <item name="src" type="462c0819:PsiDirectoryNode" />[m
+               <item name="app" type="462c0819:PsiDirectoryNode" />[m
+[31m-              <item name="bootstrap" type="462c0819:PsiDirectoryNode" />[m
+[32m+[m[32m              <item name="http" type="462c0819:PsiDirectoryNode" />[m
+             </path>[m
+             <path>[m
+[31m-              <item name="SejoFramework" type="b2602c69:ProjectViewProjectNode" />[m
+[31m-              <item name="SejoFramework" type="462c0819:PsiDirectoryNode" />[m
+[32m+[m[32m              <item name="sejo4j" type="b2602c69:ProjectViewProjectNode" />[m
+[32m+[m[32m              <item name="sejo4j" type="462c0819:PsiDirectoryNode" />[m
+               <item name="src" type="462c0819:PsiDirectoryNode" />[m
+               <item name="app" type="462c0819:PsiDirectoryNode" />[m
+               <item name="http" type="462c0819:PsiDirectoryNode" />[m
+[32m+[m[32m              <item name="handlers" type="462c0819:PsiDirectoryNode" />[m
+             </path>[m
+             <path>[m
+[31m-              <item name="SejoFramework" type="b2602c69:ProjectViewProjectNode" />[m
+[31m-              <item name="SejoFramework" type="462c0819:PsiDirectoryNode" />[m
+[32m+[m[32m              <item name="sejo4j" type="b2602c69:ProjectViewProjectNode" />[m
+[32m+[m[32m              <item name="sejo4j" type="462c0819:PsiDirectoryNode" />[m
+               <item name="src" type="462c0819:PsiDirectoryNode" />[m
+               <item name="app" type="462c0819:PsiDirectoryNode" />[m
+               <item name="http" type="462c0819:PsiDirectoryNode" />[m
+               <item name="handlers" type="462c0819:PsiDirectoryNode" />[m
+[32m+[m[32m              <item name="validators" type="462c0819:PsiDirectoryNode" />[m
+             </path>[m
+             <path>[m
+[31m-              <item name="SejoFramework" type="b2602c69:ProjectViewProjectNode" />[m
+[31m-              <item name="SejoFramework" type="462c0819:PsiDirectoryNode" />[m
+[32m+[m[32m              <item name="sejo4j" type="b2602c69:ProjectViewProjectNode" />[m
+[32m+[m[32m              <item name="sejo4j" type="462c0819:PsiDirectoryNode" />[m
+               <item name="src" type="462c0819:PsiDirectoryNode" />[m
+[31m-              <item name="app" type="462c0819:PsiDirectoryNode" />[m
+[32m+[m[32m              <item name="sejoframework" type="462c0819:PsiDirectoryNode" />[m
+[32m+[m[32m            </path>[m
+[32m+[m[32m            <path>[m
+[32m+[m[32m              <item name="sejo4j" type="b2602c69:ProjectViewProjectNode" />[m
+[32m+[m[32m              <item name="sejo4j" type="462c0819:PsiDirectoryNode" />[m
+[32m+[m[32m              <item name="src" type="462c0819:PsiDirectoryNode" />[m
+[32m+[m[32m              <item name="sejoframework" type="462c0819:PsiDirectoryNode" />[m
+[32m+[m[32m              <item name="contracts" type="462c0819:PsiDirectoryNode" />[m
+[32m+[m[32m            </path>[m
+[32m+[m[32m            <path>[m
+[32m+[m[32m              <item name="sejo4j" type="b2602c69:ProjectViewProjectNode" />[m
+[32m+[m[32m              <item name="sejo4j" type="462c0819:PsiDirectoryNode" />[m
+[32m+[m[32m              <item name="src" type="462c0819:PsiDirectoryNode" />[m
+[32m+[m[32m              <item name="sejoframework" type="462c0819:PsiDirectoryNode" />[m
+[32m+[m[32m              <item name="contracts" type="462c0819:PsiDirectoryNode" />[m
+               <item name="http" type="462c0819:PsiDirectoryNode" />[m
+[31m-              <item name="middlewares" type="462c0819:PsiDirectoryNode" />[m
+             </path>[m
+             <path>[m
+[31m-              <item name="SejoFramework" type="b2602c69:ProjectViewProjectNode" />[m
+[31m-              <item name="SejoFramework" type="462c0819:PsiDirectoryNode" />[m
+[32m+[m[32m              <item name="sejo4j" type="b2602c69:ProjectViewProjectNode" />[m
+[32m+[m[32m              <item name="sejo4j" type="462c0819:PsiDirectoryNode" />[m
+               <item name="src" type="462c0819:PsiDirectoryNode" />[m
+               <item name="sejoframework" type="462c0819:PsiDirectoryNode" />[m
+[32m+[m[32m              <item name="helpers" type="462c0819:PsiDirectoryNode" />[m
+             </path>[m
+             <path>[m
+[31m-              <item name="SejoFramework" type="b2602c69:ProjectViewProjectNode" />[m
+[31m-              <item name="SejoFramework" type="462c0819:PsiDirectoryNode" />[m
+[32m+[m[32m              <item name="sejo4j" type="b2602c69:ProjectViewProjectNode" />[m
+[32m+[m[32m              <item name="sejo4j" type="462c0819:PsiDirectoryNode" />[m
+               <item name="src" type="462c0819:PsiDirectoryNode" />[m
+               <item name="sejoframework" type="462c0819:PsiDirectoryNode" />[m
+[31m-              <item name="web" type="462c0819:PsiDirectoryNode" />[m
+[32m+[m[32m              <item name="providers" type="462c0819:PsiDirectoryNode" />[m
+             </path>[m
+             <path>[m
+[31m-              <item name="SejoFramework" type="b2602c69:ProjectViewProjectNode" />[m
+[31m-              <item name="SejoFramework" type="462c0819:PsiDirectoryNode" />[m
+[32m+[m[32m              <item name="sejo4j" type="b2602c69:ProjectViewProjectNode" />[m
+[32m+[m[32m              <item name="sejo4j" type="462c0819:PsiDirectoryNode" />[m
+               <item name="src" type="462c0819:PsiDirectoryNode" />[m
+[31m-              <item name="config" type="462c0819:PsiDirectoryNode" />[m
+[32m+[m[32m              <item name="sejoframework" type="462c0819:PsiDirectoryNode" />[m
+[32m+[m[32m              <item name="web" type="462c0819:PsiDirectoryNode" />[m
+             </path>[m
+           </expand>[m
+           <select />[m
+         </subPane>[m
+       </pane>[m
+[32m+[m[32m      <pane id="PackagesPane" />[m
+[32m+[m[32m      <pane id="Scope" />[m
+     </panes>[m
+   </component>[m
+   <component name="PropertiesComponent">[m
+[31m-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544336245685" />[m
+[32m+[m[32m    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544562877924" />[m
+[32m+[m[32m    <property name="last_opened_file_path" value="$PROJECT_DIR$" />[m
+     <property name="restartRequiresConfirmation" value="false" />[m
+     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />[m
+   </component>[m
+[36m@@ -397,10 +400,9 @@[m
+     </todo-panel>[m
+   </component>[m
+   <component name="ToolWindowManager">[m
+[31m-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />[m
+[31m-    <editor active="true" />[m
+[32m+[m[32m    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />[m
+     <layout>[m
+[31m-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24966443" />[m
+[32m+[m[32m      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2521322" />[m
+       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />[m
+       <window_info id="Image Layers" order="2" />[m
+       <window_info id="Designer" order="3" />[m
+[36m@@ -409,16 +411,15 @@[m
+       <window_info id="Favorites" order="6" side_tool="true" />[m
+       <window_info anchor="bottom" id="Message" order="0" />[m
+       <window_info anchor="bottom" id="Find" order="1" />[m
+[31m-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4986577" visible="true" weight="0.3243626" />[m
+[32m+[m[32m      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4986577" visible="true" weight="0.32394367" />[m
+       <window_info anchor="bottom" id="Debug" order="3" weight="0.39943343" />[m
+       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />[m
+       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />[m
+[31m-      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49932885" weight="0.3286119" />[m
+[32m+[m[32m      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49932885" weight="0.32827735" />[m
+       <window_info anchor="bottom" id="Terminal" order="7" weight="0.3286119" />[m
+       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5013423" side_tool="true" weight="0.3286119" />[m
+       <window_info anchor="bottom" id="Version Control" order="9" weight="0.3286119" />[m
+[31m-      <window_info anchor="bottom" id="Messages" order="10" weight="0.3286119" />[m
+[31m-      <window_info anchor="right" id="Coverage" sideWeight="0.5021097" side_tool="true" weight="0.3295302" />[m
+[32m+[m[32m      <window_info anchor="bottom" id="Messages" order="10" weight="0.32827735" />[m
+       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />[m
+       <window_info anchor="right" id="Ant Build" order="1" sideWeight="0.4978903" weight="0.24966443" />[m
+       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />[m
+[36m@@ -427,6 +428,7 @@[m
+       <window_info anchor="right" id="Theme Preview" order="5" />[m
+       <window_info anchor="right" id="Capture Analysis" order="6" />[m
+       <window_info anchor="right" id="Palette&#9;" order="7" />[m
+[32m+[m[32m      <window_info anchor="right" id="Coverage" order="8" sideWeight="0.5021097" side_tool="true" weight="0.3295302" />[m
+     </layout>[m
+     <layout-to-restore>[m
+       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24966443" />[m
+[36m@@ -483,13 +485,7 @@[m
+         </state>[m
+       </provider>[m
+     </entry>[m
+[31m-    <entry file="file://$PROJECT_DIR$/src/app/providers/DBProvider.java">[m
+[31m-      <provider selected="true" editor-type-id="text-editor">[m
+[31m-        <state relative-caret-position="68">[m
+[31m-          <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />[m
+[31m-        </state>[m
+[31m-      </provider>[m
+[31m-    </entry>[m
+[32m+[m[32m    <entry file="file://$PROJECT_DIR$/src/app/providers/DBProvider.java" />[m
+     <entry file="file://$PROJECT_DIR$/SejoFramework.iml">[m
+       <provider selected="true" editor-type-id="text-editor">[m
+         <state>[m
+[36m@@ -497,17 +493,7 @@[m
+         </state>[m
+       </provider>[m
+     </entry>[m
+[31m-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/src.zip!/java/util/HashMap.java">[m
+[31m-      <provider selected="true" editor-type-id="text-editor">[m
+[31m-        <state relative-caret-position="17">[m
+[31m-          <caret line="473" column="11" selection-start-line="473" selection-start-column="11" selection-end-line="473" selection-end-column="11" />[m
+[31m-          <folding>[m
+[31m-            <element signature="e#19296#19297#0" expanded="true" />[m
+[31m-            <element signature="e#19379#19380#0" expanded="true" />[m
+[31m-          </folding>[m
+[31m-        </state>[m
+[31m-      </provider>[m
+[31m-    </entry>[m
+[32m+[m[32m    <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/src.zip!/java/util/HashMap.java" />[m
+     <entry file="file://$PROJECT_DIR$/src/com/skillcorp/sejoframework/database/DB.java">[m
+       <provider selected="true" editor-type-id="text-editor">[m
+         <state relative-caret-position="126">[m
+[36m@@ -532,17 +518,6 @@[m
+         </state>[m
+       </provider>[m
+     </entry>[m
+[31m-    <entry file="file://$PROJECT_DIR$/src/com/skillcorp/sejoframework/helpers/Logger.java">[m
+[31m-      <provider selected="true" editor-type-id="text-editor">[m
+[31m-        <state relative-caret-position="-141">[m
+[31m-          <caret line="37" column="39" selection-start-line="37" selection-start-column="39" selection-end-line="37" selection-end-column="39" />[m
+[31m-          <folding>[m
+[31m-            <element signature="imports" expanded="true" />[m
+[31m-            <element signature="e#1342#1343#0" expanded="true" />[m
+[31m-          </folding>[m
+[31m-        </state>[m
+[31m-      </provider>[m
+[31m-    </entry>[m
+     <entry file="file://$PROJECT_DIR$/src/app/bootstrap/Providers.java">[m
+       <provider selected="true" editor-type-id="text-editor">[m
+         <state relative-caret-position="111">[m
+[36m@@ -604,67 +579,98 @@[m
+         </state>[m
+       </provider>[m
+     </entry>[m
+[31m-    <entry file="file://$PROJECT_DIR$/src/com/skillcorp/sejoframework/web/Request.java">[m
+[32m+[m[32m    <entry file="file://$PROJECT_DIR$/src/com/skillcorp/sejoframework/providers/ServiceProvider.java">[m
+       <provider selected="true" editor-type-id="text-editor">[m
+[31m-        <state relative-caret-position="237">[m
+[31m-          <caret line="34" column="60" selection-start-line="34" selection-start-column="60" selection-end-line="34" selection-end-column="60" />[m
+[32m+[m[32m        <state relative-caret-position="-17">[m
+[32m+[m[32m          <caret line="40" column="47" selection-start-line="40" selection-start-column="47" selection-end-line="40" selection-end-column="47" />[m
+           <folding>[m
+             <element signature="imports" expanded="true" />[m
+           </folding>[m
+         </state>[m
+       </provider>[m
+     </entry>[m
+[31m-    <entry file="file://$PROJECT_DIR$/src/com/skillcorp/sejoframework/helpers/Builder.java">[m
+[32m+[m[32m    <entry file="file://$PROJECT_DIR$/src/com/skillcorp/sejoframework/contracts/http/IServer.java">[m
+       <provider selected="true" editor-type-id="text-editor">[m
+[31m-        <state relative-caret-position="153">[m
+[31m-          <caret line="28" column="35" lean-forward="true" selection-start-line="28" selection-start-column="35" selection-end-line="28" selection-end-column="35" />[m
+[32m+[m[32m        <state relative-caret-position="231">[m
+[32m+[m[32m          <caret line="12" column="44" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />[m
+           <folding>[m
+             <element signature="imports" expanded="true" />[m
+[31m-            <element signature="e#804#820#0" expanded="true" />[m
+           </folding>[m
+         </state>[m
+       </provider>[m
+     </entry>[m
+[31m-    <entry file="file://$PROJECT_DIR$/src/app/http/Routes.java">[m
+[32m+[m[32m    <entry file="file://$PROJECT_DIR$/src/com/skillcorp/sejoframework/Application.java">[m
+       <provider selected="true" editor-type-id="text-editor">[m
+[31m-        <state relative-caret-position="-239">[m
+[31m-          <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />[m
+[32m+[m[32m        <state relative-caret-position="408">[m
+[32m+[m[32m          <caret line="35" column="13" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />[m
+           <folding>[m
+             <element signature="imports" expanded="true" />[m
+           </folding>[m
+         </state>[m
+       </provider>[m
+     </entry>[m
+[31m-    <entry file="file://$PROJECT_DIR$/src/com/skillcorp/sejoframework/providers/ServiceProvider.java">[m
+[32m+[m[32m    <entry file="file://$PROJECT_DIR$/src/com/skillcorp/sejoframework/contracts/http/IWebServer.java">[m
+       <provider selected="true" editor-type-id="text-editor">[m
+[31m-        <state relative-caret-position="-17">[m
+[31m-          <caret line="40" column="47" selection-start-line="40" selection-start-column="47" selection-end-line="40" selection-end-column="47" />[m
+[32m+[m[32m        <state relative-caret-position="68">[m
+[32m+[m[32m          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />[m
+[32m+[m[32m        </state>[m
+[32m+[m[32m      </provider>[m
+[32m+[m[32m    </entry>[m
+[32m+[m[32m    <entry file="file://$PROJECT_DIR$/src/com/skillcorp/sejoframework/contracts/http/IRequestHandler.java">[m
+[32m+[m[32m      <provider selected="true" editor-type-id="text-editor">[m
+[32m+[m[32m        <state relative-caret-position="102">[m
+[32m+[m[32m          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />[m
+           <folding>[m
+             <element signature="imports" expanded="true" />[m
+           </folding>[m
+         </state>[m
+       </provider>[m
+     </entry>[m
+[31m-    <entry file="file://$PROJECT_DIR$/src/com/skillcorp/sejoframework/contracts/http/IServer.java">[m
+[32m+[m[32m    <entry file="file://$PROJECT_DIR$/src/app/Bootstrap.java">[m
+       <provider selected="true" editor-type-id="text-editor">[m
+[31m-        <state relative-caret-position="231">[m
+[31m-          <caret line="12" column="44" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />[m
+[32m+[m[32m        <state relative-caret-position="544">[m
+[32m+[m[32m          <caret line="32" column="36" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />[m
+           <folding>[m
+             <element signature="imports" expanded="true" />[m
+           </folding>[m
+         </state>[m
+       </provider>[m
+     </entry>[m
+[31m-    <entry file="file://$PROJECT_DIR$/src/com/skillcorp/sejoframework/contracts/http/IWebServer.java">[m
+[32m+[m[32m    <entry file="file://$PROJECT_DIR$/src/com/skillcorp/sejoframework/helpers/Logger.java">[m
+       <provider selected="true" editor-type-id="text-editor">[m
+[31m-        <state relative-caret-position="84">[m
+[31m-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />[m
+[32m+[m[32m        <state relative-caret-position="72">[m
+[32m+[m[32m          <caret line="37" column="39" selection-start-line="37" selection-start-column="39" selection-end-line="37" selection-end-column="39" />[m
+[32m+[m[32m          <folding>[m
+[32m+[m[32m            <element signature="imports" expanded="true" />[m
+[32m+[m[32m            <element signature="e#1304#1305#0" expanded="true" />[m
+[32m+[m[32m            <element signature="e#1342#1343#0" expanded="true" />[m
+[32m+[m[32m          </folding>[m
+[32m+[m[32m        </state>[m
+[32m+[m[32m      </provider>[m
+[32m+[m[32m    </entry>[m
+[32m+[m[32m    <entry file="file://$PROJECT_DIR$/src/com/skillcorp/sejoframework/helpers/Builder.java">[m
+[32m+[m[32m      <provider selected="true" editor-type-id="text-editor">[m
+[32m+[m[32m        <state relative-caret-position="476">[m
+[32m+[m[32m          <caret line="28" column="35" lean-forward="true" selection-start-line="28" selection-start-column="35" selection-end-line="28" selection-end-column="35" />[m
+[32m+[m[32m          <folding>[m
+[32m+[m[32m            <element signature="imports" expanded="true" />[m
+[32m+[m[32m          </folding>[m
+[32m+[m[32m        </state>[m
+[32m+[m[32m      </provider>[m
+[32m+[m[32m    </entry>[m
+[32m+[m[32m    <entry file="file://$PROJECT_DIR$/src/com/skillcorp/sejoframework/web/RequestHandler.java">[m
+[32m+[m[32m      <provider selected="true" editor-type-id="text-editor">[m
+[32m+[m[32m        <state relative-caret-position="187">[m
+[32m+[m[32m          <caret line="14" selection-start-line="10" selection-start-column="3" selection-end-line="14" />[m
+[32m+[m[32m          <folding>[m
+[32m+[m[32m            <element signature="imports" expanded="true" />[m
+[32m+[m[32m          </folding>[m
+         </state>[m
+       </provider>[m
+     </entry>[m
+     <entry file="file://$PROJECT_DIR$/src/com/skillcorp/sejoframework/web/Server.java">[m
+       <provider selected="true" editor-type-id="text-editor">[m
+[31m-        <state relative-caret-position="149">[m
+[32m+[m[32m        <state relative-caret-position="-954">[m
+           <caret line="42" column="11" selection-start-line="42" selection-start-column="11" selection-end-line="42" selection-end-column="11" />[m
+           <folding>[m
+             <element signature="imports" expanded="true" />[m
+[36m@@ -672,90 +678,104 @@[m
+         </state>[m
+       </provider>[m
+     </entry>[m
+[32m+[m[32m    <entry file="file://$PROJECT_DIR$/src/com/skillcorp/sejoframework/contracts/http/IRequestValidator.java">[m
+[32m+[m[32m      <provider selected="true" editor-type-id="text-editor">[m
+[32m+[m[32m        <state relative-caret-position="153">[m
+[32m+[m[32m          <caret line="9" column="53" selection-start-line="9" selection-start-column="53" selection-end-line="9" selection-end-column="53" />[m
+[32m+[m[32m          <folding>[m
+[32m+[m[32m            <element signature="imports" expanded="true" />[m
+[32m+[m[32m          </folding>[m
+[32m+[m[32m        </state>[m
+[32m+[m[32m      </provider>[m
+[32m+[m[32m    </entry>[m
+     <entry file="file://$PROJECT_DIR$/src/com/skillcorp/sejoframework/web/Route.java">[m
+       <provider selected="true" editor-type-id="text-editor">[m
+[31m-        <state relative-caret-position="84">[m
+[31m-          <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />[m
+[32m+[m[32m        <state relative-caret-position="440">[m
+[32m+[m[32m          <caret line="37" column="5" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />[m
+           <folding>[m
+             <element signature="imports" expanded="true" />[m
+           </folding>[m
+         </state>[m
+       </provider>[m
+     </entry>[m
+[31m-    <entry file="file://$PROJECT_DIR$/src/com/skillcorp/sejoframework/Application.java">[m
+[32m+[m[32m    <entry file="file://$PROJECT_DIR$/src/com/skillcorp/sejoframework/web/Request.java">[m
+       <provider selected="true" editor-type-id="text-editor">[m
+[31m-        <state relative-caret-position="216">[m
+[31m-          <caret line="35" column="13" lean-forward="true" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />[m
+[32m+[m[32m        <state relative-caret-position="374">[m
+[32m+[m[32m          <caret line="34" column="39" selection-start-line="34" selection-start-column="39" selection-end-line="34" selection-end-column="39" />[m
+           <folding>[m
+             <element signature="imports" expanded="true" />[m
+[31m-            <element signature="e#2179#2180#0" expanded="true" />[m
+[31m-            <element signature="e#2211#2212#0" expanded="true" />[m
+           </folding>[m
+         </state>[m
+       </provider>[m
+     </entry>[m
+[31m-    <entry file="file://$PROJECT_DIR$/src/com/skillcorp/sejoframework/contracts/http/IRequestHandler.java">[m
+[32m+[m[32m    <entry file="file://$PROJECT_DIR$/src/app/http/handlers/PageNotFound.java">[m
+       <provider selected="true" editor-type-id="text-editor">[m
+[31m-        <state relative-caret-position="189">[m
+[31m-          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />[m
+[32m+[m[32m        <state relative-caret-position="102">[m
+[32m+[m[32m          <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />[m
+           <folding>[m
+             <element signature="imports" expanded="true" />[m
+           </folding>[m
+         </state>[m
+       </provider>[m
+     </entry>[m
+[31m-    <entry file="file://$PROJECT_DIR$/src/app/Bootstrap.java">[m
+[32m+[m[32m    <entry file="file://$PROJECT_DIR$/src/com/skillcorp/sejoframework/helpers/RuleValidator.java">[m
+       <provider selected="true" editor-type-id="text-editor">[m
+[31m-        <state relative-caret-position="141">[m
+[31m-          <caret line="20" column="56" selection-start-line="20" selection-start-column="56" selection-end-line="20" selection-end-column="56" />[m
+[32m+[m[32m        <state relative-caret-position="170">[m
+[32m+[m[32m          <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />[m
+[32m+[m[32m        </state>[m
+[32m+[m[32m      </provider>[m
+[32m+[m[32m    </entry>[m
+[32m+[m[32m    <entry file="file://$PROJECT_DIR$/src/app/http/Routes.java">[m
+[32m+[m[32m      <provider selected="true" editor-type-id="text-editor">[m
+[32m+[m[32m        <state relative-caret-position="355">[m
+[32m+[m[32m          <caret line="29" column="38" lean-forward="true" selection-start-line="29" selection-start-column="38" selection-end-line="29" selection-end-column="38" />[m
+           <folding>[m
+             <element signature="imports" expanded="true" />[m
+           </folding>[m
+         </state>[m
+       </provider>[m
+     </entry>[m
+[31m-    <entry file="file://$PROJECT_DIR$/src/app/http/handlers/PageNotFound.java">[m
+[32m+[m[32m    <entry file="file://$PROJECT_DIR$/src/app/http/handlers/validators/HomeValidator.java">[m
+       <provider selected="true" editor-type-id="text-editor">[m
+[31m-        <state relative-caret-position="126">[m
+[31m-          <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />[m
+[32m+[m[32m        <state relative-caret-position="357">[m
+[32m+[m[32m          <caret line="21" column="36" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />[m
+           <folding>[m
+             <element signature="imports" expanded="true" />[m
+[32m+[m[32m            <element signature="e#325#326#0" expanded="true" />[m
+[32m+[m[32m            <element signature="e#352#353#0" expanded="true" />[m
+[32m+[m[32m            <element signature="e#483#506#0" expanded="true" />[m
+           </folding>[m
+         </state>[m
+       </provider>[m
+     </entry>[m
+[31m-    <entry file="file://$PROJECT_DIR$/src/com/skillcorp/sejoframework/web/RequestHandler.java">[m
+[32m+[m[32m    <entry file="file://$PROJECT_DIR$/src/app/http/handlers/HomeHandler.java">[m
+       <provider selected="true" editor-type-id="text-editor">[m
+[31m-        <state relative-caret-position="226">[m
+[31m-          <caret line="14" lean-forward="true" selection-start-line="10" selection-start-column="3" selection-end-line="14" />[m
+[32m+[m[32m        <state relative-caret-position="304">[m
+[32m+[m[32m          <caret line="25" column="39" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />[m
+           <folding>[m
+             <element signature="imports" expanded="true" />[m
+[31m-            <element signature="e#367#368#0" expanded="true" />[m
+[31m-            <element signature="e#399#400#0" expanded="true" />[m
+           </folding>[m
+         </state>[m
+       </provider>[m
+     </entry>[m
+     <entry file="file://$PROJECT_DIR$/src/com/skillcorp/sejoframework/web/RouterHandler.java">[m
+       <provider selected="true" editor-type-id="text-editor">[m
+[31m-        <state relative-caret-position="195">[m
+[31m-          <caret line="244" column="14" selection-start-line="244" selection-start-column="14" selection-end-line="244" selection-end-column="14" />[m
+[32m+[m[32m        <state relative-caret-position="368">[m
+[32m+[m[32m          <caret line="129" column="22" selection-start-line="129" selection-start-column="22" selection-end-line="129" selection-end-column="22" />[m
+           <folding>[m
+             <element signature="imports" expanded="true" />[m
+[31m-            <element signature="e#1908#1909#0" expanded="true" />[m
+[31m-            <element signature="e#1949#1950#0" expanded="true" />[m
+[31m-            <element signature="e#7812#7813#0" expanded="true" />[m
+[31m-            <element signature="e#7858#7859#0" expanded="true" />[m
+[31m-            <element signature="e#8711#8712#0" expanded="true" />[m
+[31m-            <element signature="e#8751#8752#0" expanded="true" />[m
+[32m+[m[32m            <element signature="e#8899#8900#0" expanded="true" />[m
+[32m+[m[32m            <element signature="e#8945#8946#0" expanded="true" />[m
+[32m+[m[32m            <element signature="e#9855#9856#0" expanded="true" />[m
+[32m+[m[32m            <element signature="e#9895#9896#0" expanded="true" />[m
+           </folding>[m
+         </state>[m
+       </provider>[m
+     </entry>[m
+[31m-    <entry file="file://$PROJECT_DIR$/src/app/http/handlers/HomeHandler.java">[m
+[32m+[m[32m    <entry file="file://$PROJECT_DIR$/src/com/skillcorp/sejoframework/helpers/Validator.java">[m
+       <provider selected="true" editor-type-id="text-editor">[m
+[31m-        <state relative-caret-position="315">[m
+[31m-          <caret line="36" column="12" selection-start-line="36" selection-start-column="12" selection-end-line="36" selection-end-column="12" />[m
+[32m+[m[32m        <state relative-caret-position="-658">[m
+[32m+[m[32m          <caret line="46" column="32" selection-start-line="46" selection-start-column="32" selection-end-line="46" selection-end-column="32" />[m
+           <folding>[m
+             <element signature="imports" expanded="true" />[m
+           </folding>[m
+[1mdiff --git a/out/production/SejoFramework/META-INF/SejoFramework.kotlin_module b/out/production/SejoFramework/META-INF/SejoFramework.kotlin_module[m
+[1mdeleted file mode 100644[m
+[1mindex 8fb6019..0000000[m
+Binary files a/out/production/SejoFramework/META-INF/SejoFramework.kotlin_module and /dev/null differ
+[1mdiff --git a/out/production/SejoFramework/com/skillcorp/sejoframework/web/Route.class b/out/production/SejoFramework/com/skillcorp/sejoframework/web/Route.class[m
+[1mindex 5bd95a5..69e97de 100644[m
+Binary files a/out/production/SejoFramework/com/skillcorp/sejoframework/web/Route.class and b/out/production/SejoFramework/com/skillcorp/sejoframework/web/Route.class differ
+[1mdiff --git a/src/app/http/Routes.java b/src/app/http/Routes.java[m
+[1mindex 0c4a5ea..347cbe9 100644[m
+[1m--- a/src/app/http/Routes.java[m
+[1m+++ b/src/app/http/Routes.java[m
+[36m@@ -1,6 +1,7 @@[m
+ package app.http;[m
+ [m
+ import app.http.handlers.HomeHandler;[m
+[32m+[m[32mimport app.http.handlers.validators.HomeValidator;[m
+ import com.skillcorp.sejoframework.web.RouterHandler;[m
+ [m
+ public class Routes {[m
+[36m@@ -25,6 +26,10 @@[m [mpublic class Routes {[m
+ [m
+         router.get("/test", HomeHandler.class, "action")[m
+                 .middleware("auth");[m
+[32m+[m
+[32m+[m[32m        router.get("/store/users/[user_id]", HomeHandler.class, "store")[m
+[32m+[m[32m                .middleware("auth")[m
+[32m+[m[32m                .validator(HomeValidator.class);[m
+     }[m
+ [m
+     public RouterHandler getRouter()[m
+[1mdiff --git a/src/app/http/handlers/HomeHandler.java b/src/app/http/handlers/HomeHandler.java[m
+[1mindex 9fd533f..0b76147 100644[m
+[1m--- a/src/app/http/handlers/HomeHandler.java[m
+[1m+++ b/src/app/http/handlers/HomeHandler.java[m
+[36m@@ -23,7 +23,7 @@[m [mpublic class HomeHandler extends RequestHandler implements IRequestHandler {[m
+         //DB db = (DB) this.container.getProvider("DB");[m
+        try {[m
+           //  System.out.println(db.getMessage());[m
+[31m-            res.send("Hello, Sejo say: "+message + " with DI: " + "db.getMessage()" + " > ");[m
+[32m+[m[32m            res.send("Hello, Sejo say:  with DI: " + "db.getMessage()" + " > ");[m
+         } catch(Exception ex) {[m
+            System.out.println("ERRROR "+ex.toString());[m
+            res.send("INTERNAL SERVER", 500);[m
+[36m@@ -35,4 +35,9 @@[m [mpublic class HomeHandler extends RequestHandler implements IRequestHandler {[m
+         DB db = (DB) this.getContainer().getProvider("DB2");[m
+         res.send("User: "+req.query.get("user_id") + " con "+req.query.get("a"));[m
+     }[m
+[32m+[m
+[32m+[m[32m    public void store(Request req, Response res)[m
+[32m+[m[32m    {[m
+[32m+[m[32m        res.send("User: "+req.query.get("user_id") + " con "+req.query.get("email"));[m
+[32m+[m[32m    }[m
+ }[m
+[1mdiff --git a/src/com/skillcorp/sejoframework/web/Route.java b/src/com/skillcorp/sejoframework/web/Route.java[m
+[1mindex 61223fe..06425b2 100644[m
+[1m--- a/src/com/skillcorp/sejoframework/web/Route.java[m
+[1m+++ b/src/com/skillcorp/sejoframework/web/Route.java[m
+[36m@@ -2,6 +2,7 @@[m [mpackage com.skillcorp.sejoframework.web;[m
+ [m
+ [m
+ import com.skillcorp.sejoframework.contracts.http.IRequestHandler;[m
+[32m+[m[32mimport com.skillcorp.sejoframework.helpers.RuleValidator;[m
+ [m
+ import java.util.HashMap;[m
+ [m
+[36m@@ -17,6 +18,9 @@[m [mpublic class Route {[m
+ [m
+     public String methodHandlerName;[m
+ [m
+[32m+[m[32m    public HashMap<String, RuleValidator> rulesGet;[m
+[32m+[m[32m    public HashMap<String, RuleValidator> rulesPost;[m
+[32m+[m
+     public Route(String method, String url, IRequestHandler handler)[m
+     {[m
+         this.method = method;[m
+[1mdiff --git a/src/com/skillcorp/sejoframework/web/RouterHandler.java b/src/com/skillcorp/sejoframework/web/RouterHandler.java[m
+[1mindex a8f5266..b56832f 100644[m
+[1m--- a/src/com/skillcorp/sejoframework/web/RouterHandler.java[m
+[1m+++ b/src/com/skillcorp/sejoframework/web/RouterHandler.java[m
+[36m@@ -4,11 +4,13 @@[m [mimport app.bootstrap.Middlewares;[m
+ import app.http.handlers.HomeHandler;[m
+ import com.skillcorp.sejoframework.Application;[m
+ import com.skillcorp.sejoframework.contracts.http.IRequestHandler;[m
+[32m+[m[32mimport com.skillcorp.sejoframework.contracts.http.IRequestValidator;[m
+ import com.skillcorp.sejoframework.contracts.http.IServer;[m
+ import com.skillcorp.sejoframework.contracts.http.IWebServer;[m
+ import com.skillcorp.sejoframework.contracts.middlewares.IMiddleware;[m
+ import com.skillcorp.sejoframework.contracts.providers.ILogger;[m
+ import com.skillcorp.sejoframework.helpers.Builder;[m
+[32m+[m[32mimport com.skillcorp.sejoframework.helpers.Validator;[m
+ import com.skillcorp.sejoframework.providers.ServiceProvider;[m
+ import com.sun.net.httpserver.HttpExchange;[m
+ import com.sun.net.httpserver.HttpHandler;[m
+[36m@@ -72,6 +74,8 @@[m [mpublic class RouterHandler implements HttpHandler {[m
+         startMemory = Runtime.getRuntime().totalMemory()-Runtime.getRuntime().freeMemory();[m
+         routeParams = null;[m
+         boolean prevent = false;[m
+[32m+[m[32m        boolean failValidator = false;[m
+[32m+[m
+ [m
+         Request request = new Request(exchange);[m
+         Response response = new Response();[m
+[36m@@ -92,13 +96,32 @@[m [mpublic class RouterHandler implements HttpHandler {[m
+                         prevent = true;[m
+                     }[m
+                 }[m
+[31m-                if (!prevent) {[m
+[32m+[m
+[32m+[m[32m                if(route.rulesGet != null && route.rulesGet.size() > 0 || route.rulesPost != null && route.rulesPost.size() > 0)[m
+[32m+[m[32m                {[m
+[32m+[m[32m                    HashMap<String, String> error = Validator.array(route.rulesGet, request.query);[m
+[32m+[m[32m                    String messageError = "";[m
+[32m+[m[32m                    if (error.size() > 0) {[m
+[32m+[m[32m                        for (HashMap.Entry<String, String> err: error.entrySet()) {[m
+[32m+[m[32m                            logger.debug("ERROR: "+err.getKey(), err.getValue());[m
+[32m+[m[32m                            if (!failValidator) {[m
+[32m+[m[32m                                messageError = err.getValue();[m
+[32m+[m[32m                            }[m
+[32m+[m[32m                        }[m
+[32m+[m[32m                        response.send(messageError, 500);[m
+[32m+[m[32m                    }[m
+[32m+[m[32m                }[m
+[32m+[m
+[32m+[m[32m                logger.debug("VALID: ",String.valueOf(prevent),String.valueOf(failValidator));[m
+[32m+[m
+[32m+[m[32m                if (!prevent || !failValidator) {[m
+[32m+[m[32m                    //logger.debug("IF VALA");[m
+                     for(Map.Entry<String, String> item : routeParams.entrySet())[m
+                     {[m
+                         //logger.debug("var", item.getKey(), item.getValue());[m
+                         request.query.put(item.getKey(),item.getValue());[m
+                     }[m
+[31m-                    logger.debug("params", request.query.keySet().toString());[m
+[32m+[m[32m                    //logger.debug("params", request.query.keySet().toString());[m
+                     if (route.methodHandlerName==null) {[m
+                         callMethodAtInstance(route.handler,"index", request, response);[m
+                     } else {[m
+[36m@@ -288,6 +311,27 @@[m [mpublic class RouterHandler implements HttpHandler {[m
+         return this;[m
+     }[m
+ [m
+[32m+[m[32m    public RouterHandler validator(Object validator)[m
+[32m+[m[32m    {[m
+[32m+[m[32m        IRequestValidator validatorInstance = null;[m
+[32m+[m[32m        if (!validator.getClass().toString().contains("class")) return this;[m
+[32m+[m[32m        String className = validator.toString().split(" ")[1];[m
+[32m+[m
+[32m+[m[32m        try {[m
+[32m+[m[32m            validatorInstance = (IRequestValidator) Builder.createInstance(className);[m
+[32m+[m[32m        } catch (Exception ex)[m
+[32m+[m[32m        {[m
+[32m+[m[32m            logger.debug("Handler Wrong: "+validator.getClass().getName());[m
+[32m+[m[32m        }[m
+[32m+[m
+[32m+[m[32m        if (validatorInstance != null) {[m
+[32m+[m[32m            Route route = routesMap.get(routes.size()-1);[m
+[32m+[m[32m            route.rulesGet = validatorInstance.getRulesGet();[m
+[32m+[m[32m            route.rulesPost = validatorInstance.getRulesPost();[m
+[32m+[m[32m        }[m
+[32m+[m[32m        return this;[m
+[32m+[m[32m    }[m
+[32m+[m
+     private Response processMiddlewares(Route route, Request request, Response response)[m
+     {[m
+         Response res = null;[m
+[36m@@ -312,23 +356,23 @@[m [mpublic class RouterHandler implements HttpHandler {[m
+         try {[m
+             method = obj.getClass().getMethod(methodName, Request.class, Response.class);[m
+         } catch (SecurityException e) {[m
+[31m-            logger.debug(e.getMessage());[m
+[32m+[m[32m            logger.debug("Cant execute method by: " + e.getMessage());[m
+         }[m
+         catch (NoSuchMethodException e) {[m
+[31m-            logger.debug(e.getMessage());[m
+[32m+[m[32m            logger.debug("Method not exists: " + e.getMessage());[m
+         }[m
+ [m
+         try {[m
+             method.invoke(obj, request, response);[m
+         } catch (IllegalArgumentException e) {[m
+[31m-            logger.debug(e.getMessage());[m
+[32m+[m[32m            logger.debug("Error calling method: " + e.getMessage());[m
+         }[m
+         catch (IllegalAccessException e) {[m
+[31m-            logger.debug(e.getMessage());[m
+[32m+[m[32m            logger.debug("Error: " + e.getMessage());[m
+ [m
+         }[m
+         catch (InvocationTargetException e) {[m
+[31m-            logger.debug(e.getMessage());[m
+[32m+[m[32m            logger.debug("Error: " + e.getMessage());[m
+         }[m
+     }[m
+ [m
