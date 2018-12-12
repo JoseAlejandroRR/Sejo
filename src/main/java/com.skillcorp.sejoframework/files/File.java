@@ -1,19 +1,26 @@
 package com.skillcorp.sejoframework.files;
 
-import java.io.BufferedOutputStream;
-import java.io.IOException;
-import java.io.OutputStream;
-import java.nio.file.Files;
-import java.nio.file.OpenOption;
-import java.nio.file.Path;
-import java.nio.file.Paths;
+import com.skillcorp.sejoframework.helpers.Logger;
+import com.skillcorp.sejoframework.web.Analysis;
+import com.skillcorp.sejoframework.web.FileInfo;
+import com.sun.net.httpserver.Headers;
+import com.sun.net.httpserver.HttpExchange;
+
+import java.io.*;
+import java.nio.file.*;
 import java.util.HashSet;
+import java.util.Map;
 import java.util.Set;
 
 import static java.nio.file.StandardOpenOption.APPEND;
 import static java.nio.file.StandardOpenOption.CREATE;
 
 public class File {
+
+    public static final String DIR_TEMP = "storage/temp/";
+    public static final String DIR_UPLOADS = "./storage/uploads/";
+
+    private static String[] filesUploaded;
 
     public static boolean save(String filePath, String content)
     {
@@ -33,7 +40,12 @@ public class File {
 
     private static boolean writeFile(String path, String content)
     {
-        byte data[] = content.getBytes();
+        return File.writeFile(path, content.getBytes());
+    }
+
+    private static boolean writeFile(String path, byte[] data)
+    {
+        //byte data[] = content.getBytes();
         Path p = Paths.get(path);
 
         try (OutputStream out = new BufferedOutputStream(
@@ -60,4 +72,90 @@ public class File {
         }
         return false;
     }
+
+    public static void get(HttpExchange httpExchange)
+    {
+        String fileUrl = null;
+
+        //if (File.headers== null || File.requestBody==null) return fileUrl;
+
+        //获取ContentType
+        String contentType = httpExchange.getRequestHeaders().get("Content-type").toString().replace("[", "")
+                .replace("]", "");
+
+        //获取content长度
+        int length = Integer.parseInt(httpExchange.getRequestHeaders().get("Content-length").toString().replace("[", "")
+                .replace("]", ""));
+
+        Map<String, Object> map = null;
+        try {
+            map = Analysis.parse(httpExchange.getRequestBody(),
+                    contentType, length);
+        } catch (IOException e) {
+            Logger.getLogger().debug("ERROR1 : " + e.getMessage());
+            e.printStackTrace();
+        }
+
+        if (map.size() > 0) {
+            File.filesUploaded = new String[map.size()];
+        }
+        int i = 0;
+        for(Map.Entry<String, Object> item : map.entrySet())
+        {
+            if (String.valueOf(item.getKey()).trim().length() == 0) continue;
+            FileInfo fileInfo = (FileInfo) map.get(item.getKey());
+            fileUrl = File.DIR_TEMP + fileInfo.getFilename();
+            Logger.getLogger().debug("FILE",fileInfo.toString());
+            File.writeFile(fileUrl,fileInfo.getBytes());
+            Logger.getLogger().debug("RARO ",String.valueOf(map.size()), item.getKey(), fileInfo.getFieldname());
+            File.filesUploaded[i] = fileUrl;
+        }
+
+    }
+
+    public static void clearTempDir()
+    {
+        if(File.filesUploaded == null) return;
+        for (String url : File.filesUploaded)
+        {
+            File.delete(url);
+        }
+        File.filesUploaded = null;
+    }
+
+    public static boolean move(String source, String dest)
+    {
+        Path sourceFile = FileSystems.getDefault().getPath("",source);
+        Path destFile = FileSystems.getDefault().getPath("",dest);
+        return File.move(sourceFile, destFile);
+    }
+
+    public static boolean move(Path source, Path dest)
+    {
+        try {
+            Files.move(source, dest);
+            return true;
+        } catch (IOException e) {
+            e.printStackTrace();
+            return false;
+        }
+    }
+
+
+    public static boolean delete(String path)
+    {
+        Path file = FileSystems.getDefault().getPath("",path);
+        return File.delete(file);
+    }
+
+    public static boolean delete(Path path)
+    {
+        try {
+            return Files.deleteIfExists(path);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return false;
+    }
+
 }

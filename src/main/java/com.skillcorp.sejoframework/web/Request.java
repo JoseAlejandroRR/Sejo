@@ -24,7 +24,7 @@ public class Request {
 
     public HashMap<String, String> query;
 
-    public HashMap body;
+    public HashMap<String, String> body;
 
     public String url;
 
@@ -83,7 +83,7 @@ public class Request {
             while(m.find())
             {
                 key = m.group();
-                body.put(key,null);
+                //body.put(key,null);
                 value = "";
             }
 

@@ -5,6 +5,8 @@ import com.skillcorp.sejoframework.Application;
 import com.skillcorp.sejoframework.cache.Cache;
 import com.skillcorp.sejoframework.contracts.http.IRequestHandler;
 import com.skillcorp.sejoframework.database.DB;
+import com.skillcorp.sejoframework.files.File;
+import com.skillcorp.sejoframework.helpers.Logger;
 import com.skillcorp.sejoframework.web.Request;
 import com.skillcorp.sejoframework.web.RequestHandler;
 import com.skillcorp.sejoframework.web.Response;
@@ -42,7 +44,7 @@ public class HomeHandler extends RequestHandler implements IRequestHandler {
 
         //ArrayList<Map<String, String>> datos = Cache.get("info");
         User user = new User();
-        user.find(Integer.parseInt(req.query.get("user_id")));
+        //user.find(Integer.parseInt(req.query.get("user_id")));
 
         res.send("User: "+user.getName());
 
@@ -50,11 +52,18 @@ public class HomeHandler extends RequestHandler implements IRequestHandler {
 
     public void upload(Request req, Response res)
     {
-        ArrayList<Map<String, String>> datos = new ArrayList<Map<String, String>>();
+        /*Logger.getLogger().debug("TIENE "+req.body.size());
+        for (Map.Entry<String, String> in : req.body.entrySet())
+        {
+            Logger.getLogger().debug("FIELD ",in.getKey(), in.getValue());
+        }*/
+        //String filePath = File.get("foto",null);
+
+        /*ArrayList<Map<String, String>> datos = new ArrayList<Map<String, String>>();
         HashMap<String, String> obj = new HashMap<String, String>();
-        obj.put("email",req.body.get("email").toString());
+        obj.put("email",String.valueOf(req.body.get("email")));
         datos.add(obj);
-        Cache.add("info", datos);
-        res.send("FILES from " + req.body.get("email") +  " and " + req.body.get("user_id"));
+        Cache.add("info", datos);*/
+        res.send("Se ha creado un archivo en " + 1 );
     }
 }

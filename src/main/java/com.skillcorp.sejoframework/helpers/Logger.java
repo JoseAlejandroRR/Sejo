@@ -49,14 +49,14 @@ public class Logger implements ILogger {
 
         if(mode != DEBUG) return;
         String line = registerData(strings, MODE_DEBUG);
-       // showConsole(line, MODE_DEBUG);
+        //showConsole(line, MODE_DEBUG);
         writeFile(line);
     }
 
     @Override
     public void info(String... strings) {
         String line = registerData(strings, MODE_INFO);
-        //showConsole(line, MODE_INFO);
+        showConsole(line, MODE_INFO);
         writeFile(line);
     }
 

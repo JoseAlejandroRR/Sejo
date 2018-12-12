@@ -8,11 +8,16 @@ import com.skillcorp.sejoframework.contracts.http.IServer;
 import com.skillcorp.sejoframework.contracts.http.IWebServer;
 import com.skillcorp.sejoframework.contracts.middlewares.IMiddleware;
 import com.skillcorp.sejoframework.contracts.providers.ILogger;
+import com.skillcorp.sejoframework.files.File;
 import com.skillcorp.sejoframework.helpers.Builder;
 import com.skillcorp.sejoframework.providers.ServiceProvider;
+import com.sun.net.httpserver.Headers;
 import com.sun.net.httpserver.HttpExchange;
 import com.sun.net.httpserver.HttpHandler;
+import com.sun.xml.internal.ws.client.RequestContext;
 
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
 import java.lang.reflect.InvocationTargetException;
@@ -71,25 +76,18 @@ public class RouterHandler implements HttpHandler {
         routeParams = null;
         boolean prevent = false;
 
+        File.get(exchange);
+
         Request request = new Request(exchange);
         Response response = new Response();
-
-        logger.debug(exchange.getRemoteAddress().getHostName());
-        //logger.debug(exchange.getPrincipal().getRealm());
-        //logger.debug(exchange.getPrincipal().getUsername());
-        //logger.debug("HOSTS ",exchange.getRemoteAddress().getHostName(),exchange.getRemoteAddress().getHostString(),exchange.getRemoteAddress().getAddress().toString());
-
-        logger.debug(String.format(exchange.getRequestHeaders().toString()));
 
         for(Map.Entry<String, List<String>> item : exchange.getRequestHeaders().entrySet())
         {
             for(String str : item.getValue())
             {
-                logger.debug("HEADER", item.getKey(), str);
+                //logger.debug("HEADER", item.getKey(), str);
             }
         }
-
-        //logger.debug(Builder.convert(exchange.getRequestBody(), StandardCharsets.ISO_8859_1));
 
         logger.info(request.method, request.url, request.headers.keySet().toString());
         int index = existRoute(request.url);
@@ -108,7 +106,6 @@ public class RouterHandler implements HttpHandler {
                     }
                 }
                 if (!prevent) {
-                    logger.debug("WORKS HERE");
                     if (routeParams != null) {
                         for(Map.Entry<String, String> item : routeParams.entrySet())
                         {
@@ -117,21 +114,17 @@ public class RouterHandler implements HttpHandler {
                         }
                     }
 
-                    logger.debug("params", request.query.keySet().toString());
                     if (route.methodHandlerName==null) {
                         callMethodAtInstance(route.handler,"index", request, response);
                     } else {
                         callMethodAtInstance(route.handler,route.methodHandlerName, request, response);
                     }
                     //logger.debug("Working to here again");
-                    //route.handler
-                    //route.handler.execute(request, response);
                 }
             } else {
                 logger.info("Http Method not enabled: " + request.url,"httpCode: 505");
                 response.send("Method not enabled.", 500);
             }
-
         } else {
             if (Server.getHandler404() == null) {
                 response.send("URL not found.", 404);
@@ -140,11 +133,13 @@ public class RouterHandler implements HttpHandler {
             }
             logger.info("URL: " + request.url +" not found","httpCode: 404");
         }
+
         exchange.sendResponseHeaders(response.httpCode, response.getResponse().length());
         OutputStream os = exchange.getResponseBody();
         os.write(response.getResponse().getBytes());
         os.close();
 
+        //File.clearTempDir();
         endTime   =  System.currentTimeMillis();
         endMemory = Runtime.getRuntime().totalMemory()-Runtime.getRuntime().freeMemory();
         totalTime = (endTime - startTime);
@@ -334,23 +329,23 @@ public class RouterHandler implements HttpHandler {
         try {
             method = obj.getClass().getMethod(methodName, Request.class, Response.class);
         } catch (SecurityException e) {
-            logger.debug(e.getMessage());
+            logger.debug("SecurityException: "+e.getMessage());
         }
         catch (NoSuchMethodException e) {
-            logger.debug(e.getMessage());
+            logger.debug("NoSuchMethodException: "+e.getMessage());
         }
 
         try {
             method.invoke(obj, request, response);
         } catch (IllegalArgumentException e) {
-            logger.debug(e.getMessage());
+            logger.debug("IllegalArgumentException: "+e.getMessage());
         }
         catch (IllegalAccessException e) {
-            logger.debug(e.getMessage());
+            logger.debug("IllegalAccessException: "+e.getMessage());
 
         }
         catch (InvocationTargetException e) {
-            logger.debug(e.getMessage());
+            logger.debug("InvocationTargetException: "+e.getMessage());
         }
     }
 
