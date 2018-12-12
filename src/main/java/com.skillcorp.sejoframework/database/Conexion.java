@@ -85,7 +85,7 @@ public class Conexion {
 	public void setModeCache(boolean _asyn, int _time)
 	{
 		Conexion.modeCache = true;
-		String PATH = "cache/";
+		String PATH = "storage/cache/";
 		File file = new File(String.format(PATH));
 		Conexion.modeAsynchrony = _asyn;
         // Reading directory contents

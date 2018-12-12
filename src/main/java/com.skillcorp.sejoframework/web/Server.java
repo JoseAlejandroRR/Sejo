@@ -1,6 +1,5 @@
 package com.skillcorp.sejoframework.web;
 
-import app.http.handlers.HomeHandler;
 import com.skillcorp.sejoframework.contracts.http.IRequestHandler;
 import com.skillcorp.sejoframework.contracts.http.IServer;
 import com.skillcorp.sejoframework.contracts.http.IWebServer;
@@ -38,6 +37,8 @@ public class Server implements IServer, IWebServer
     public RouterHandler routerHandler;
 
     public boolean isRunning = false;
+
+    public static final String SESSION_SERVER_NAME = "SEJOSESSIONID";
 
 
     public Server(ILogger logger)

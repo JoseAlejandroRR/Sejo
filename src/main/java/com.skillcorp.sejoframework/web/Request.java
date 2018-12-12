@@ -98,6 +98,7 @@ public class Request {
                 if(pd.length > 1 && isFile == false) {
                     value = pd[1].trim();
                     body.put(key,value);
+                    Logger.getLogger().debug("FIELD",key,value);
                 }
 
             }

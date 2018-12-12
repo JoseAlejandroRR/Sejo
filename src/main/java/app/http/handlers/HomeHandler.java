@@ -1,20 +1,13 @@
 package app.http.handlers;
 
 import app.models.User;
-import com.skillcorp.sejoframework.Application;
-import com.skillcorp.sejoframework.cache.Cache;
+
 import com.skillcorp.sejoframework.contracts.http.IRequestHandler;
-import com.skillcorp.sejoframework.database.DB;
-import com.skillcorp.sejoframework.files.File;
 import com.skillcorp.sejoframework.helpers.Logger;
-import com.skillcorp.sejoframework.web.Request;
-import com.skillcorp.sejoframework.web.RequestHandler;
-import com.skillcorp.sejoframework.web.Response;
-import com.sun.net.httpserver.HttpExchange;
+import com.skillcorp.sejoframework.web.*;
 
 import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.Iterator;
 
 public class HomeHandler extends RequestHandler implements IRequestHandler {
 
@@ -43,10 +36,26 @@ public class HomeHandler extends RequestHandler implements IRequestHandler {
         //DB db = (DB) this.getContainer().getProvider("DB2");
 
         //ArrayList<Map<String, String>> datos = Cache.get("info");
-        User user = new User();
-        //user.find(Integer.parseInt(req.query.get("user_id")));
+        /*for(int i = 1; i <= 100; i++) {
+            User user = new User();
+            user.setName("User "+i);
+            user.lastname = "Demo "+i;
+            user.document = "V-"+i;
+            user.save();
+        }*/
 
-        res.send("User: "+user.getName());
+        User user = new User();
+        ArrayList users = user.where("id",">","1").get();
+        Iterator it = users.iterator();
+        while(it.hasNext())
+        {
+            User u = (User) it.next();
+            Logger.getLogger().debug("User "+ u.name);
+        }
+
+        //user.find(1);
+
+        res.send("Complete: ");
 
     }
 
@@ -64,6 +73,12 @@ public class HomeHandler extends RequestHandler implements IRequestHandler {
         obj.put("email",String.valueOf(req.body.get("email")));
         datos.add(obj);
         Cache.add("info", datos);*/
-        res.send("Se ha creado un archivo en " + 1 );
+        res.send("Se ha creado un archivo para " + req.body.get("email") );
+    }
+
+    public void exit(Request req, Response res)
+    {
+        Cookies.destroy(Server.SESSION_SERVER_NAME);
+        res.send("Works");
     }
 }

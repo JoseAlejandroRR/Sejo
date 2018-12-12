@@ -55,13 +55,13 @@ public class DB{
             }
         } catch(SQLException e){
             //System.out.println(e);
-            System.out.printf("-- ERROR: %s\n", e);
+            System.out.printf("-- ERROR: %s\n", e.getMessage());
         } catch(ClassNotFoundException e){
             //System.out.println(e);
-            System.out.printf("-- ERROR: %s\n", e);
+            System.out.printf("-- DRIVE NOT FOUND ERROR: %s\n", e.getMessage());
         } catch(Exception e){
             //System.out.println(e);
-            System.out.printf("-- ERROR: %s\n", e);
+            System.out.printf("-- ERROR: %s\n", e.getMessage());
         }
         return result;
     }
@@ -73,7 +73,12 @@ public class DB{
 
     protected void closeConnection()
     {
-        //this.connection.close()
+        /*try {
+            this.connection.close();
+        } catch (SQLException e) {
+            this.showConsole("Error Close Connection: " + e.getMessage());
+            e.printStackTrace();
+        }*/
         this.isConnected = false;
         this.connection = null;
         this.showConsole("-- Conexion Cerrada --\n");
@@ -89,7 +94,7 @@ public class DB{
             //this.showConsole("-- SQL: "+this.requestSQL+" --");
         } catch(SQLException error)
         {
-            this.showConsole("-- ERROR requestReader: "+error+" --");
+            this.showConsole("-- ERROR requestReader: "+error.getMessage()+" --");
         }
         return data;
     }
@@ -101,7 +106,7 @@ public class DB{
             affected = this.request.executeUpdate();
         } catch(SQLException error)
         {
-            this.showConsole("-- ERROR: "+error+" --\n");
+            this.showConsole("-- ERROR: "+error.getMessage()+" --\n");
         }
         return affected;
     }
@@ -168,7 +173,7 @@ public class DB{
 
         } catch(Exception error)
         {
-            this.showConsole("-- ERROR: "+error+" --\n");
+            this.showConsole("-- ERROR: "+error.getMessage()+" --\n");
         }
 
         return success;

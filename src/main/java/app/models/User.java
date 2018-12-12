@@ -8,13 +8,13 @@ import java.util.Date;
 public class User extends Model {
 
     public int id;
-    private String name;
+    public String name;
     public String lastname;
     public String document;
-    public Date birthday;
+    //public Date birthday;
     public int status;
     public boolean timestamps = true;
-    private ArrayList payments = null;
+    //private ArrayList payments = null;
     //protected boolean algo;
 
     public User()
@@ -33,10 +33,10 @@ public class User extends Model {
         this.name = _name;
     }
 
-    public ArrayList payments()
+    /*public ArrayList payments()
     {
         if(this.payments==null) this.payments = this.hasMany(Payment.class,"user_id");
         return this.payments;
-    }
+    }*/
 
 }

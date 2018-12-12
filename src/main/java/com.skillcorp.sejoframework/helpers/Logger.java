@@ -49,7 +49,7 @@ public class Logger implements ILogger {
 
         if(mode != DEBUG) return;
         String line = registerData(strings, MODE_DEBUG);
-        //showConsole(line, MODE_DEBUG);
+        showConsole(line, MODE_DEBUG);
         writeFile(line);
     }
 

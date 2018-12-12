@@ -4,12 +4,14 @@ import app.bootstrap.Middlewares;
 import app.http.handlers.HomeHandler;
 import com.skillcorp.sejoframework.Application;
 import com.skillcorp.sejoframework.contracts.http.IRequestHandler;
+import com.skillcorp.sejoframework.contracts.http.IRequestValidator;
 import com.skillcorp.sejoframework.contracts.http.IServer;
 import com.skillcorp.sejoframework.contracts.http.IWebServer;
 import com.skillcorp.sejoframework.contracts.middlewares.IMiddleware;
 import com.skillcorp.sejoframework.contracts.providers.ILogger;
 import com.skillcorp.sejoframework.files.File;
 import com.skillcorp.sejoframework.helpers.Builder;
+import com.skillcorp.sejoframework.helpers.Validator;
 import com.skillcorp.sejoframework.providers.ServiceProvider;
 import com.sun.net.httpserver.Headers;
 import com.sun.net.httpserver.HttpExchange;
@@ -75,8 +77,16 @@ public class RouterHandler implements HttpHandler {
         startMemory = Runtime.getRuntime().totalMemory()-Runtime.getRuntime().freeMemory();
         routeParams = null;
         boolean prevent = false;
+        boolean failValidator = false;
 
-        File.get(exchange);
+        Cookies.setHeaders(exchange);
+
+        if (!Cookies.has(Server.SESSION_SERVER_NAME)) {
+            Cookies.add(Server.SESSION_SERVER_NAME, String.valueOf(System.currentTimeMillis()));
+        }
+
+
+        //File.get(exchange);
 
         Request request = new Request(exchange);
         Response response = new Response();
@@ -105,6 +115,33 @@ public class RouterHandler implements HttpHandler {
                         prevent = true;
                     }
                 }
+
+                if(route.rulesGet != null && route.rulesGet.size() > 0 || route.rulesPost != null && route.rulesPost.size() > 0)
+                {
+                    HashMap<String, String> error = Validator.array(route.rulesGet, request.query);
+                    String messageError = "";
+                    if (error.size() > 0) {
+                        for (HashMap.Entry<String, String> err: error.entrySet()) {
+                            logger.debug("ERROR: "+err.getKey(), err.getValue());
+                            if (!failValidator) {
+                                messageError = err.getValue();
+                            }
+                        }
+                        response.send(messageError, 500);
+                    }
+
+                    error = Validator.array(route.rulesPost, request.body);
+                    if (error.size() > 0) {
+                        for (HashMap.Entry<String, String> err: error.entrySet()) {
+                            logger.debug("ERROR: "+err.getKey(), err.getValue());
+                            if (!failValidator) {
+                                messageError = err.getValue();
+                            }
+                        }
+                        response.send(messageError, 500);
+                    }
+                }
+
                 if (!prevent) {
                     if (routeParams != null) {
                         for(Map.Entry<String, String> item : routeParams.entrySet())
@@ -302,6 +339,27 @@ public class RouterHandler implements HttpHandler {
         }
         Route route = routesMap.get(routes.size()-1);
         route.middlewares = values;
+        return this;
+    }
+
+    public RouterHandler validator(Object validator)
+    {
+        IRequestValidator validatorInstance = null;
+        if (!validator.getClass().toString().contains("class")) return this;
+        String className = validator.toString().split(" ")[1];
+
+        try {
+            validatorInstance = (IRequestValidator) Builder.createInstance(className);
+        } catch (Exception ex)
+        {
+            logger.debug("Handler Wrong: "+validator.getClass().getName());
+        }
+
+        if (validatorInstance != null) {
+            Route route = routesMap.get(routes.size()-1);
+            route.rulesGet = validatorInstance.getRulesGet();
+            route.rulesPost = validatorInstance.getRulesPost();
+        }
         return this;
     }
 
