@@ -6,6 +6,7 @@ import com.skillcorp.sejoframework.web.FileInfo;
 import com.sun.net.httpserver.Headers;
 import com.sun.net.httpserver.HttpExchange;
 
+import javax.xml.bind.DatatypeConverter;
 import java.io.*;
 import java.nio.file.*;
 import java.util.HashSet;
@@ -51,10 +52,27 @@ public class File {
         try (OutputStream out = new BufferedOutputStream(
                 Files.newOutputStream(p, CREATE))) {
             out.write(data, 0, data.length);
+            out.flush();
+            out.close();
             return true;
         } catch (IOException x) {
             System.err.println(x);
         }
+        /*Writer writer = null;
+
+
+
+        try {
+            writer = new BufferedWriter(new OutputStreamWriter(
+                    new FileOutputStream(path)));
+            writer.write(data);
+            return true;
+        } catch (IOException ex) {
+            // Report
+        } finally {
+            try {writer.close();} catch (Exception ex) {
+            }
+        }*/
         return false;
     }
 
@@ -73,7 +91,21 @@ public class File {
         return false;
     }
 
-    public static void get(HttpExchange httpExchange)
+    public static String get(String path)
+    {
+        String content = "";
+        try(BufferedReader br = new BufferedReader(new FileReader(path))) {
+            for(String line; (line = br.readLine()) != null; ) {
+                content = line;
+            }
+            // line is not visible here.
+        } catch (IOException e) {
+           Logger.getLogger().debug("Error Loading File: " + path + " by: " + e.getMessage());
+        }
+        return content;
+    }
+
+    public static void getFiles(HttpExchange httpExchange)
     {
         String fileUrl = null;
 
@@ -139,6 +171,16 @@ public class File {
             e.printStackTrace();
             return false;
         }
+    }
+
+    public static boolean exist(String path)
+    {
+        java.io.File f = new java.io.File(path);
+        if(f.exists() && !f.isDirectory()) {
+
+            return true;
+        }
+        return false;
     }
 
 

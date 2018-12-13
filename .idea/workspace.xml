@@ -2,19 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f6320162-4e98-4d1e-b80f-1032132434f0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/app/http/Routes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/http/Routes.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/app/http/handlers/HomeHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/http/handlers/HomeHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/app/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/models/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com.skillcorp.sejoframework/contracts/http/IRequestHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.skillcorp.sejoframework/contracts/http/IRequestHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com.skillcorp.sejoframework/database/Conexion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.skillcorp.sejoframework/database/Conexion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com.skillcorp.sejoframework/database/DB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.skillcorp.sejoframework/database/DB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com.skillcorp.sejoframework/helpers/Logger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.skillcorp.sejoframework/helpers/Logger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com.skillcorp.sejoframework/web/Request.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.skillcorp.sejoframework/web/Request.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com.skillcorp.sejoframework/web/Route.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.skillcorp.sejoframework/web/Route.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com.skillcorp.sejoframework/cache/Cache.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.skillcorp.sejoframework/cache/Cache.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com.skillcorp.sejoframework/files/File.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.skillcorp.sejoframework/files/File.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com.skillcorp.sejoframework/helpers/Builder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.skillcorp.sejoframework/helpers/Builder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com.skillcorp.sejoframework/web/Response.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.skillcorp.sejoframework/web/Response.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com.skillcorp.sejoframework/web/RouterHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.skillcorp.sejoframework/web/RouterHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com.skillcorp.sejoframework/web/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.skillcorp.sejoframework/web/Server.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -32,47 +27,27 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/app/http/handlers/HomeHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="52" column="14" selection-start-line="52" selection-start-column="14" selection-end-line="52" selection-end-column="14" />
+            <state relative-caret-position="577">
+              <caret line="137" column="14" selection-start-line="137" selection-start-column="14" selection-end-line="137" selection-end-column="14" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#4510#4526#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com.skillcorp.sejoframework/database/Model.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com.skillcorp.sejoframework/database/CacheDB.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="211">
-              <caret line="223" selection-start-line="223" selection-end-line="223" />
+            <state relative-caret-position="322">
+              <caret line="54" column="18" selection-start-line="54" selection-start-column="18" selection-end-line="54" selection-end-column="18" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#800#815#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/app/models/User.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="33" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="22" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/eloquent.config">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="7" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -80,62 +55,93 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/app/http/Routes.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="271">
-              <caret line="20" column="38" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="38" />
+            <state relative-caret-position="509">
+              <caret line="34" column="51" selection-start-line="34" selection-start-column="51" selection-end-line="34" selection-end-column="51" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com.skillcorp.sejoframework/database/Conexion.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com.skillcorp.sejoframework/web/RouterHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1427">
-              <caret line="111" column="49" selection-start-line="111" selection-start-column="49" selection-end-line="111" selection-end-column="49" />
+            <state relative-caret-position="180">
+              <caret line="91" column="49" selection-start-line="91" selection-start-column="49" selection-end-line="91" selection-end-column="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com.skillcorp.sejoframework/web/Response.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="71" column="40" lean-forward="true" selection-start-line="71" selection-start-column="40" selection-end-line="71" selection-end-column="40" />
               <folding>
-                <element signature="e#1156#1157#0" expanded="true" />
-                <element signature="e#1185#1186#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#302#303#0" expanded="true" />
+                <element signature="e#345#346#0" expanded="true" />
+                <element signature="e#1292#1293#0" expanded="true" />
+                <element signature="e#1313#1314#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com.skillcorp.sejoframework/database/DB.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com.skillcorp.sejoframework/cache/Cache.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="363">
-              <caret line="80" column="11" selection-start-line="80" selection-start-column="11" selection-end-line="80" selection-end-column="11" />
+            <state relative-caret-position="458">
+              <caret line="179" column="30" selection-start-line="179" selection-start-column="30" selection-end-line="179" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1932#1933#0" expanded="true" />
-                <element signature="e#2001#2002#0" expanded="true" />
-                <element signature="e#7506#7507#0" expanded="true" />
-                <element signature="e#7553#7554#0" expanded="true" />
+                <element signature="e#2539#2540#0" expanded="true" />
+                <element signature="e#3488#3489#0" expanded="true" />
+                <element signature="e#3508#3509#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com.skillcorp.sejoframework/helpers/Builder.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="441">
+              <caret line="280" column="54" selection-start-line="280" selection-start-column="54" selection-end-line="280" selection-end-column="54" />
+              <folding>
+                <element signature="e#9626#9642#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gradlew">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build.gradle">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com.skillcorp.sejoframework/web/Sessions.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+            <state relative-caret-position="493">
+              <caret line="59" column="28" selection-start-line="59" selection-start-column="28" selection-end-line="59" selection-end-column="28" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/app/Bootstrap.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/app/http/handlers/PageNotFound.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="50">
-              <caret line="21" column="7" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
+            <state relative-caret-position="68">
+              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com.skillcorp.sejoframework/files/File.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="292">
+              <caret line="54" column="24" selection-start-line="54" selection-start-column="24" selection-end-line="54" selection-end-column="24" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#761#762#0" expanded="true" />
+                <element signature="e#819#820#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -167,6 +173,14 @@
       <find>Parse Body Request</find>
       <find>close</find>
       <find>-- ERROR</find>
+      <find>File</find>
+      <find>CLASE</find>
+      <find>Encontrado</find>
+      <find>ONE_MINUTE</find>
+      <find>convertHashMapToJson</find>
+      <find>convertJsonToHashMap</find>
+      <find>getResponseHeaders</find>
+      <find>sendResponseHeaders</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -177,14 +191,12 @@
       <list>
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/main/java/Main.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com.skillcorp.sejoframework/helpers/Builder.java" />
         <option value="$PROJECT_DIR$/src/main/java/com.skillcorp.sejoframework/database/CacheDB.java" />
         <option value="$PROJECT_DIR$/src/main/java/app/models/Payment.java" />
         <option value="$PROJECT_DIR$/src/main/java/com.skillcorp.sejoframework/database/NotificationDBEvent.java" />
         <option value="$PROJECT_DIR$/src/main/java/com.skillcorp.sejoframework/database/Model.java" />
         <option value="$PROJECT_DIR$/src/main/java/com.skillcorp.sejoframework/database/NotificationDB.java" />
         <option value="$PROJECT_DIR$/src/main/java/com.skillcorp.sejoframework/web/FileInfo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com.skillcorp.sejoframework/files/File.java" />
         <option value="$PROJECT_DIR$/src/main/java/com.skillcorp.sejoframework/web/Analysis.java" />
         <option value="$PROJECT_DIR$/src/main/java/com.skillcorp.sejoframework/helpers/Logger.java" />
         <option value="$PROJECT_DIR$/src/main/java/com.skillcorp.sejoframework/helpers/RuleValidator.java" />
@@ -193,17 +205,22 @@
         <option value="$PROJECT_DIR$/src/main/java/com.skillcorp.sejoframework/web/Route.java" />
         <option value="$PROJECT_DIR$/src/main/java/com.skillcorp.sejoframework/web/Request.java" />
         <option value="$PROJECT_DIR$/src/main/java/app/http/handlers/validators/HomeValidator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com.skillcorp.sejoframework/web/RouterHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/com.skillcorp.sejoframework/web/Cookies.java" />
         <option value="$PROJECT_DIR$/src/main/java/com.skillcorp.sejoframework/web/Server.java" />
         <option value="$PROJECT_DIR$/src/main/java/com.skillcorp.sejoframework/contracts/http/IRequestHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/com.skillcorp.sejoframework/database/Conexion.java" />
         <option value="$PROJECT_DIR$/eloquent.config" />
-        <option value="$PROJECT_DIR$/src/main/java/app/http/Routes.java" />
-        <option value="$PROJECT_DIR$/src/main/java/app/models/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/app/Bootstrap.java" />
         <option value="$PROJECT_DIR$/src/main/java/com.skillcorp.sejoframework/database/DB.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/models/User.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com.skillcorp.sejoframework/web/Sessions.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com.skillcorp.sejoframework/files/File.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com.skillcorp.sejoframework/cache/Cache.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com.skillcorp.sejoframework/web/Response.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com.skillcorp.sejoframework/web/RouterHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/app/http/handlers/HomeHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/http/Routes.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com.skillcorp.sejoframework/helpers/Builder.java" />
       </list>
     </option>
   </component>
@@ -316,7 +333,7 @@
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com.skillcorp.sejoframework" type="462c0819:PsiDirectoryNode" />
-              <item name="contracts" type="462c0819:PsiDirectoryNode" />
+              <item name="cache" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="sejo4j" type="b2602c69:ProjectViewProjectNode" />
@@ -326,7 +343,6 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com.skillcorp.sejoframework" type="462c0819:PsiDirectoryNode" />
               <item name="contracts" type="462c0819:PsiDirectoryNode" />
-              <item name="http" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="sejo4j" type="b2602c69:ProjectViewProjectNode" />
@@ -335,7 +351,7 @@
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com.skillcorp.sejoframework" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
+              <item name="files" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="sejo4j" type="b2602c69:ProjectViewProjectNode" />
@@ -344,7 +360,7 @@
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com.skillcorp.sejoframework" type="462c0819:PsiDirectoryNode" />
-              <item name="providers" type="462c0819:PsiDirectoryNode" />
+              <item name="helpers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="sejo4j" type="b2602c69:ProjectViewProjectNode" />
@@ -366,7 +382,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544650571490" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544735050121" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -493,30 +509,6 @@
     <entry file="file://$PROJECT_DIR$/LICENSE">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com.skillcorp.sejoframework/cache/Cache.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="13" column="23" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com.skillcorp.sejoframework/helpers/Builder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-179">
-          <caret line="230" column="38" lean-forward="true" selection-start-line="230" selection-start-column="38" selection-end-line="230" selection-end-column="38" />
-          <folding>
-            <element signature="e#5258#5274#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com.skillcorp.sejoframework/database/CacheDB.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="11" column="47" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/app/models/Payment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="339">
@@ -604,13 +596,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com.skillcorp.sejoframework/files/File.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="934">
-          <caret line="108" column="50" lean-forward="true" selection-start-line="108" selection-start-column="50" selection-end-line="108" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com.skillcorp.sejoframework/helpers/RuleValidator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
@@ -664,13 +649,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com.skillcorp.sejoframework/web/RouterHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="83" column="55" selection-start-line="83" selection-start-column="55" selection-end-line="83" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com.skillcorp.sejoframework/web/Cookies.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="237">
@@ -719,13 +697,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/app/http/Routes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="20" column="38" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gradlew">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -733,16 +704,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/app/models/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="33" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -798,12 +759,119 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/app/http/handlers/HomeHandler.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/models/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="52" column="14" selection-start-line="52" selection-start-column="14" selection-end-line="52" selection-end-column="14" />
+        <state relative-caret-position="272">
+          <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com.skillcorp.sejoframework/database/CacheDB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="54" column="18" selection-start-line="54" selection-start-column="18" selection-end-line="54" selection-end-column="18" />
+          <folding>
+            <element signature="e#800#815#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/cache/MTU0NDY0Njk0OTk4OA==">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-column="152" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/http/handlers/PageNotFound.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com.skillcorp.sejoframework/web/Sessions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="59" column="28" selection-start-line="59" selection-start-column="28" selection-end-line="59" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com.skillcorp.sejoframework/files/File.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="54" column="24" selection-start-line="54" selection-start-column="24" selection-end-line="54" selection-end-column="24" />
+          <folding>
+            <element signature="e#761#762#0" expanded="true" />
+            <element signature="e#819#820#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com.skillcorp.sejoframework/cache/Cache.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="458">
+          <caret line="179" column="30" selection-start-line="179" selection-start-column="30" selection-end-line="179" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2539#2540#0" expanded="true" />
+            <element signature="e#3488#3489#0" expanded="true" />
+            <element signature="e#3508#3509#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com.skillcorp.sejoframework/web/RouterHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="91" column="49" selection-start-line="91" selection-start-column="49" selection-end-line="91" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/http/Routes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="509">
+          <caret line="34" column="51" selection-start-line="34" selection-start-column="51" selection-end-line="34" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/http/handlers/HomeHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="577">
+          <caret line="137" column="14" selection-start-line="137" selection-start-column="14" selection-end-line="137" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4510#4526#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com.skillcorp.sejoframework/web/Response.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="71" column="40" lean-forward="true" selection-start-line="71" selection-start-column="40" selection-end-line="71" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#302#303#0" expanded="true" />
+            <element signature="e#345#346#0" expanded="true" />
+            <element signature="e#1292#1293#0" expanded="true" />
+            <element signature="e#1313#1314#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com.skillcorp.sejoframework/helpers/Builder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="280" column="54" selection-start-line="280" selection-start-column="54" selection-end-line="280" selection-end-column="54" />
+          <folding>
+            <element signature="e#9626#9642#0" expanded="true" />
           </folding>
         </state>
       </provider>

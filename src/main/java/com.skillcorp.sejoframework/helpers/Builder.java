@@ -249,4 +249,36 @@ public class Builder {
         }
     }
 
+    public static HashMap convertJsonToHashMap(String json)
+    {
+        Logger.getLogger().debug("convertJsonToHashMap ", json);
+        HashMap<String, String> obj = new HashMap<String, String>();
+
+        String[] vars =  json.substring(1, json.length() - 1).split(",");
+
+        for (String child : vars)
+        {
+            String[] var = child.split(":");
+
+            if (var.length > 1) {
+                obj.put(var[0], var[1]);
+                Logger.getLogger().debug("VAR ",var[0], var[1]);
+            }
+        }
+
+        return obj;
+    }
+
+    public static String convertHashMapToJson(HashMap<String, String> obj)
+    {
+        String json = "";
+
+        for (Map.Entry<String, String> child : obj.entrySet())
+        {
+            json += String.format("\"%s\":\"%s\",", child.getKey(), child.getValue());
+        }
+
+        return "{" + json.substring(0, json.length()-1) + "}";
+    }
+
 }

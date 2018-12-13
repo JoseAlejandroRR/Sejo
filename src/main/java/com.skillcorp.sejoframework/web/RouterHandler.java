@@ -89,7 +89,7 @@ public class RouterHandler implements HttpHandler {
         //File.get(exchange);
 
         Request request = new Request(exchange);
-        Response response = new Response();
+        Response response = new Response(exchange);
 
         for(Map.Entry<String, List<String>> item : exchange.getRequestHeaders().entrySet())
         {
@@ -164,7 +164,7 @@ public class RouterHandler implements HttpHandler {
             }
         } else {
             if (Server.getHandler404() == null) {
-                response.send("URL not found.", 404);
+                //response.send("URL not found.", 404);
             } else {
                 callMethodAtInstance(Server.getHandler404(),"index", request, response);
             }

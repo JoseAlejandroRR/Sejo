@@ -1,6 +1,9 @@
 package com.skillcorp.sejoframework.web;
 
+import com.skillcorp.sejoframework.helpers.Builder;
 import com.sun.net.httpserver.HttpExchange;
+
+import java.util.HashMap;
 
 public class Response {
 
@@ -10,8 +13,17 @@ public class Response {
 
     public boolean handled = false;
 
-    public Response()
+    private HttpExchange httpExchange;
+
+    private static final String CONTENT_TYPE_HTML = "text/html";
+
+    private static final String CONTENT_TYPE_JSON = "application/json";
+
+    private String content_type;
+
+    public Response(HttpExchange exchange)
     {
+        this.httpExchange = exchange;
     }
 
     public Response send(String response)
@@ -33,6 +45,13 @@ public class Response {
             this.response = response;
         }
 
+        if(content_type == null)
+        {
+            content_type = CONTENT_TYPE_HTML;
+        }
+
+        httpExchange.getResponseHeaders().add("Content-Type", content_type);
+
         handled = true;
 
         return this;
@@ -41,5 +60,19 @@ public class Response {
     public String getResponse()
     {
         return response;
+    }
+
+    public void json(HashMap obj)
+    {
+        json(obj, httpCode);
+    }
+
+    public void json(HashMap obj, int httpCode)
+    {
+        String json = Builder.convertHashMapToJson(obj);
+
+        content_type = CONTENT_TYPE_JSON;
+
+        send(json, httpCode);
     }
 }

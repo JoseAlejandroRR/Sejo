@@ -11,6 +11,10 @@ public class User extends Model {
     public String name;
     public String lastname;
     public String document;
+    public String bio;
+    public String direction;
+    public String state;
+    public String country;
     //public Date birthday;
     public int status;
     public boolean timestamps = true;

@@ -28,7 +28,11 @@ public class Routes {
         router.get("/test", HomeHandler.class, "action")
                 .middleware("auth");
 
+        router.get("/cache", HomeHandler.class, "demo");
+
         router.get("/exit", HomeHandler.class, "exit");
+
+        router.get("/json", HomeHandler.class, "api");
     }
 
     public RouterHandler getRouter()
