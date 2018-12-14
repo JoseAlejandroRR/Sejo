@@ -28,6 +28,8 @@ public class Application implements IApplication {
 
     public ILogger logger;
 
+    public static final String PATH_RESOURCES = "./resources/";
+
 
     public Application(IServer server, ServiceProvider containr, ILogger logger)
     {

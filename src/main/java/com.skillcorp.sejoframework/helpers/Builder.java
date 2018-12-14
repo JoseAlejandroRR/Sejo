@@ -281,4 +281,9 @@ public class Builder {
         return "{" + json.substring(0, json.length()-1) + "}";
     }
 
+    public static String getClassName(Object object)
+    {
+        return object.getClass().toString().substring(6, object.getClass().toString().length());
+    }
+
 }

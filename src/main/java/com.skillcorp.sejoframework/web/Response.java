@@ -1,6 +1,7 @@
 package com.skillcorp.sejoframework.web;
 
 import com.skillcorp.sejoframework.helpers.Builder;
+import com.skillcorp.sejoframework.views.View;
 import com.sun.net.httpserver.HttpExchange;
 
 import java.util.HashMap;
@@ -74,5 +75,12 @@ public class Response {
         content_type = CONTENT_TYPE_JSON;
 
         send(json, httpCode);
+    }
+
+    public void view(String file, HashMap<String, Object> data)
+    {
+        String html = View.render(file, data);
+
+        send(html);
     }
 }

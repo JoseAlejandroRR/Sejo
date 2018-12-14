@@ -137,4 +137,32 @@ public class HomeHandler extends RequestHandler implements IRequestHandler {
 
         res.json(obj);
     }
+
+    public void views(Request req, Response res)
+    {
+        ArrayList<HashMap<String, String>> books = new ArrayList<>();
+
+        HashMap<String, String> book = new HashMap<String, String>();
+
+        book.put("name","La Guerra del fin del Mundo");
+        book.put("author","Mario Vargas Llosa");
+        book.put("editorial","Seix Barral");
+        books.add(book);
+
+        book = new HashMap<String, String>();
+
+        book.put("name","Halcon");
+        book.put("author","Gary Gennings");
+        book.put("editorial","Planeta");
+        books.add(book);
+
+
+        HashMap<String, Object> obj = new HashMap<String, Object>();
+        obj.put("title","SejoFramework");
+        obj.put("text","This is a simple text sample");
+        obj.put("books", books);
+        obj.put("current_year", 2018);
+
+        res.view("index",obj);
+    }
 }

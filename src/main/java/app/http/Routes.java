@@ -33,6 +33,8 @@ public class Routes {
         router.get("/exit", HomeHandler.class, "exit");
 
         router.get("/json", HomeHandler.class, "api");
+
+        router.get("/static", HomeHandler.class, "views");
     }
 
     public RouterHandler getRouter()
