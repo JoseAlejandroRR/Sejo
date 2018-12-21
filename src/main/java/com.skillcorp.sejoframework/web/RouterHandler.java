@@ -216,7 +216,7 @@ public class RouterHandler implements HttpHandler {
             path = path.replaceAll("/","__").trim();
             matcher = p1.matcher(path);
             if(path.trim().equals(uri.trim())) {
-                logger.debug("CHECK",path,uri);
+                //logger.debug("CHECK",path,uri);
                 return n;
             }
 
@@ -272,7 +272,7 @@ public class RouterHandler implements HttpHandler {
 
                 return n;
             } else {
-                logger.debug("ROUTE NOT EXIST");
+                //logger.debug("ROUTE NOT EXIST");
             }
             n++;
         }
